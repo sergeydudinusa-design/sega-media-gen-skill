@@ -808,7 +808,9 @@
         "endpoint": "seedance-2-character",
         "cost_usd": 0.18,
         "best_for": "[Beta] Turn fictional character references into reusable video characters. Upload reference images and describe the outf",
-        "default_args": {}
+        "default_args": {},
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       }
     }
   },
@@ -1242,7 +1244,9 @@
         "endpoint": "seedance-2.0-mini-image-to-video",
         "cost_usd": 0.2,
         "best_for": "Seedance 2.0 Mini Image-to-Video is the fastest and most cost-efficient tier in the Seedance 2.0 family, converting stil",
-        "default_args": {}
+        "default_args": {},
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2.1-image-to-video": {
         "endpoint": "seedance-2.1-image-to-video",
@@ -1251,7 +1255,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2.5-image-to-video": {
         "endpoint": "seedance-2.5-image-to-video",
@@ -1260,7 +1266,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-lite-i2v": {
         "endpoint": "seedance-lite-i2v",
@@ -1776,7 +1784,9 @@
         "endpoint": "seedance-2.0-mini-text-to-video",
         "cost_usd": 0.2,
         "best_for": "Seedance 2.0 Mini Text-to-Video is the fastest and most affordable text-to-video model in the Seedance lineup, generatin",
-        "default_args": {}
+        "default_args": {},
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2.1-text-to-video": {
         "endpoint": "seedance-2.1-text-to-video",
@@ -1785,7 +1795,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2.5-text-to-video": {
         "endpoint": "seedance-2.5-text-to-video",
@@ -1794,7 +1806,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-lite-t2v": {
         "endpoint": "seedance-lite-t2v",
@@ -1962,7 +1976,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-first-last-frame-fast": {
         "endpoint": "seedance-2-first-last-frame-fast",
@@ -1971,7 +1987,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-i2v": {
         "endpoint": "seedance-2-i2v",
@@ -1980,7 +1998,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-i2v-480p": {
         "endpoint": "seedance-2-i2v-480p",
@@ -1989,7 +2009,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-image-to-video": {
         "endpoint": "seedance-2-image-to-video",
@@ -1998,7 +2020,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-image-to-video-fast": {
         "endpoint": "seedance-2-image-to-video-fast",
@@ -2007,7 +2031,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-mini-image-to-video": {
         "endpoint": "seedance-2-mini-image-to-video",
@@ -2016,7 +2042,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-omni-reference": {
         "endpoint": "seedance-2-omni-reference",
@@ -2025,7 +2053,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-omni-reference-480p": {
         "endpoint": "seedance-2-omni-reference-480p",
@@ -2034,7 +2064,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-omni-reference-no-video": {
         "endpoint": "seedance-2-omni-reference-no-video",
@@ -2043,7 +2075,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-omni-reference-no-video-fast": {
         "endpoint": "seedance-2-omni-reference-no-video-fast",
@@ -2052,7 +2086,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-first-last-frame": {
         "endpoint": "seedance-2-vip-first-last-frame",
@@ -2061,7 +2097,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-first-last-frame-1080p": {
         "endpoint": "seedance-2-vip-first-last-frame-1080p",
@@ -2070,7 +2108,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-first-last-frame-fast": {
         "endpoint": "seedance-2-vip-first-last-frame-fast",
@@ -2079,7 +2119,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-image-to-video": {
         "endpoint": "seedance-2-vip-image-to-video",
@@ -2088,7 +2130,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-image-to-video-1080p": {
         "endpoint": "seedance-2-vip-image-to-video-1080p",
@@ -2097,7 +2141,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-image-to-video-fast": {
         "endpoint": "seedance-2-vip-image-to-video-fast",
@@ -2106,7 +2152,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-omni-reference": {
         "endpoint": "seedance-2-vip-omni-reference",
@@ -2115,7 +2163,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-omni-reference-1080p": {
         "endpoint": "seedance-2-vip-omni-reference-1080p",
@@ -2124,7 +2174,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-omni-reference-fast": {
         "endpoint": "seedance-2-vip-omni-reference-fast",
@@ -2133,7 +2185,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-extend": {
         "endpoint": "seedance-2-extend",
@@ -2142,7 +2196,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-mini-text-to-video": {
         "endpoint": "seedance-2-mini-text-to-video",
@@ -2151,7 +2207,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-t2v": {
         "endpoint": "seedance-2-t2v",
@@ -2160,7 +2218,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-t2v-480p": {
         "endpoint": "seedance-2-t2v-480p",
@@ -2169,7 +2229,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-text-to-video": {
         "endpoint": "seedance-2-text-to-video",
@@ -2178,7 +2240,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-text-to-video-fast": {
         "endpoint": "seedance-2-text-to-video-fast",
@@ -2187,7 +2251,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-extend": {
         "endpoint": "seedance-2-vip-extend",
@@ -2196,7 +2262,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-extend-1080p": {
         "endpoint": "seedance-2-vip-extend-1080p",
@@ -2205,7 +2273,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-text-to-video": {
         "endpoint": "seedance-2-vip-text-to-video",
@@ -2214,7 +2284,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-text-to-video-1080p": {
         "endpoint": "seedance-2-vip-text-to-video-1080p",
@@ -2223,7 +2295,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       },
       "seedance-2-vip-text-to-video-fast": {
         "endpoint": "seedance-2-vip-text-to-video-fast",
@@ -2232,7 +2306,9 @@
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
-        }
+        },
+        "available": false,
+        "note": "Not yet deployed on muapi.ai (as of 2026-06-22)"
       }
     }
   },

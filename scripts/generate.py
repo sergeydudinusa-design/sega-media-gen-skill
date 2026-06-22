@@ -191,6 +191,9 @@ def cmd_image(args) -> None:
         sys.stderr.write(f"ERROR: unknown image model '{model_key}'. Available: {list(img_cfg['models'])}\n")
         sys.exit(4)
     spec = img_cfg["models"][model_key]
+    if not spec.get("available", True):
+        sys.stderr.write(f"ERROR: model '{model_key}' is not yet available on muapi.ai. Note: {spec.get('note','')}\n")
+        sys.exit(11)
 
     payload = dict(spec.get("default_args", {}))
     payload["prompt"] = args.prompt
@@ -255,6 +258,9 @@ def cmd_video(args) -> None:
         sys.stderr.write(f"ERROR: unknown video model '{model_key}'. Available: {list(vid_cfg['models'])}\n")
         sys.exit(4)
     spec = vid_cfg["models"][model_key]
+    if not spec.get("available", True):
+        sys.stderr.write(f"ERROR: model '{model_key}' is not yet available on muapi.ai. Note: {spec.get('note','')}\n")
+        sys.exit(11)
 
     folder = expand_path(args.folder)
     if not folder.is_dir():
@@ -317,6 +323,9 @@ def cmd_upscale(args) -> None:
         sys.stderr.write(f"ERROR: unknown upscale model '{model_key}'. Available: {list(cfg['models'])}\n")
         sys.exit(4)
     spec = cfg["models"][model_key]
+    if not spec.get("available", True):
+        sys.stderr.write(f"ERROR: model '{model_key}' is not yet available on muapi.ai. Note: {spec.get('note','')}\n")
+        sys.exit(11)
 
     work_title = args.title or slugify(in_path.stem)
     folder = get_or_make_folder(output_dir, work_title)
