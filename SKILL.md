@@ -153,3 +153,9 @@ When the user asks to refresh models:
 - **Don't drift from user intent.** Refining a prompt is not rewriting the vision.
 - **One generation per request.** Don't preemptively generate variants.
 - **Aspect ratio for video.** Kling uses `aspect_ratio` ("16:9", "9:16", "1:1") passed directly. Change it via `default_args` in models.json if needed.
+
+## СТРОГО ЗАПРЕЩЕНО
+
+- **Никогда не делать POST-запросы для тестирования эндпоинтов.** Любой `POST /api/v1/{model}` с реальным контентом — это платная генерация. Для проверки доступности эндпоинта использовать только `POST /api/v1/models/{name}/estimate-cost` или sandbox-ключ.
+- **Никогда не запускать video-генерацию без явного "да" от пользователя.** Даже если пользователь описал сцену — это не ОК. Нужно явное подтверждение после показа стоимости.
+- **Никогда не запускать несколько генераций подряд** без подтверждения каждой.
