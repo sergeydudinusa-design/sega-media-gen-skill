@@ -803,6 +803,12 @@
         "cost_usd": 0.1,
         "best_for": "Alibaba WAN 2.7 Image Edit Pro performs prompt-driven image editing with multi-image reference support and up to 2K outp",
         "default_args": {}
+      },
+      "seedance-2-character": {
+        "endpoint": "seedance-2-character",
+        "cost_usd": 0.18,
+        "best_for": "[Beta] Turn fictional character references into reusable video characters. Upload reference images and describe the outf",
+        "default_args": {}
       }
     }
   },
@@ -1243,7 +1249,8 @@
         "cost_usd": 0.4,
         "best_for": "Seedance 2.1 Image-to-Video converts a single still image into a high-fidelity cinematic video. This next-generation mod",
         "default_args": {
-          "duration": 5
+          "duration": 5,
+          "aspect_ratio": "16:9"
         }
       },
       "seedance-2.5-image-to-video": {
@@ -1251,7 +1258,8 @@
         "cost_usd": 0.6,
         "best_for": "Seedance 2.5 Image-to-Video is the flagship next-generation model delivering photorealistic video from a single image. I",
         "default_args": {
-          "duration": 5
+          "duration": 5,
+          "aspect_ratio": "16:9"
         }
       },
       "seedance-lite-i2v": {
@@ -1774,13 +1782,19 @@
         "endpoint": "seedance-2.1-text-to-video",
         "cost_usd": 0.4,
         "best_for": "Seedance 2.1 Text-to-Video generates high-quality cinematic videos directly from text prompts. The model excels at compl",
-        "default_args": {}
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
       },
       "seedance-2.5-text-to-video": {
         "endpoint": "seedance-2.5-text-to-video",
         "cost_usd": 0.6,
         "best_for": "Seedance 2.5 Text-to-Video is the most advanced text-to-video model, generating photorealistic 4K cinematic videos from ",
-        "default_args": {}
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
       },
       "seedance-lite-t2v": {
         "endpoint": "seedance-lite-t2v",
@@ -1936,6 +1950,285 @@
         "endpoint": "wan2.7-text-to-video",
         "cost_usd": 0.1,
         "best_for": "Alibaba WAN 2.7 Text-to-Video turns plain prompts into coherent, cinematic clips.",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-first-last-frame": {
+        "endpoint": "seedance-2-first-last-frame",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 First & Last Frame (Pro) by ByteDance. Generate video that transitions between two reference images. Provide 1 imag",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-first-last-frame-fast": {
+        "endpoint": "seedance-2-first-last-frame-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 First & Last Frame (Fast) by ByteDance. Quickly generate video that transitions between reference images at reduced",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-i2v": {
+        "endpoint": "seedance-2-i2v",
+        "cost_usd": 0.75,
+        "best_for": "SD 2.0 is the latest multimodal video generation model by ByteDance, offering advanced camera control, native audio-vide",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-i2v-480p": {
+        "endpoint": "seedance-2-i2v-480p",
+        "cost_usd": 0.6,
+        "best_for": "SD 2.0 480p image-to-video generation. Faster and more cost-effective than the 720p variant, ideal for previews and draf",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-image-to-video": {
+        "endpoint": "seedance-2-image-to-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Image-to-Video (Pro) by ByteDance. Animates a start-frame image into a high-quality video with native audio, 4\u201315 s",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-image-to-video-fast": {
+        "endpoint": "seedance-2-image-to-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Image-to-Video (Fast) by ByteDance. Quickly animates a start-frame image into video with 4\u201315 second duration at re",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-mini-image-to-video": {
+        "endpoint": "seedance-2-mini-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Seedance 2.0 Mini Image-to-Video is the fastest and most cost-efficient tier in the Seedance 2.0 family, converting stil",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-omni-reference": {
+        "endpoint": "seedance-2-omni-reference",
+        "cost_usd": 1.5,
+        "best_for": "SD 2.0 Omni Reference \u2014 generate videos with visual consistency using reference images, videos, and audio. Maintain char",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-omni-reference-480p": {
+        "endpoint": "seedance-2-omni-reference-480p",
+        "cost_usd": 1.44,
+        "best_for": "SD 2.0 480p Omni Reference \u2014 generate videos with visual consistency using reference images, videos, and audio at 480p r",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-omni-reference-no-video": {
+        "endpoint": "seedance-2-omni-reference-no-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Omni Reference by ByteDance. Generate videos using up to 9 image references and up to 3 audio references. Reference",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-omni-reference-no-video-fast": {
+        "endpoint": "seedance-2-omni-reference-no-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Omni Reference (Fast) by ByteDance. Quickly generate videos using up to 9 image references and up to 3 audio refere",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-first-last-frame": {
+        "endpoint": "seedance-2-vip-first-last-frame",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 First & Last Frame VIP (Pro) by ByteDance. Generate video that transitions between two reference images with priori",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-first-last-frame-1080p": {
+        "endpoint": "seedance-2-vip-first-last-frame-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 First & Last Frame VIP 1080p by ByteDance. Generate 1080p video that transitions between two reference images with ",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-first-last-frame-fast": {
+        "endpoint": "seedance-2-vip-first-last-frame-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 First & Last Frame VIP Fast by ByteDance. Faster generation of video transitions between two reference images with ",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-image-to-video": {
+        "endpoint": "seedance-2-vip-image-to-video",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Image-to-Video VIP (Pro) by ByteDance. Animates a start-frame image into a high-quality video with priority routing",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-image-to-video-1080p": {
+        "endpoint": "seedance-2-vip-image-to-video-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Image-to-Video VIP 1080p by ByteDance. Animates a still image into a cinematic 1080p video with priority routing, 4",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-image-to-video-fast": {
+        "endpoint": "seedance-2-vip-image-to-video-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Image-to-Video VIP Fast by ByteDance. Faster animation of a start-frame image with priority routing, 4\u201315 second du",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-omni-reference": {
+        "endpoint": "seedance-2-vip-omni-reference",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Omni Reference VIP (Pro) by ByteDance. Generate videos using up to 9 image references, up to 3 video clips, and up ",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-omni-reference-1080p": {
+        "endpoint": "seedance-2-vip-omni-reference-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Omni Reference VIP 1080p by ByteDance. Generate full HD videos using up to 9 image references, up to 3 video clips,",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-omni-reference-fast": {
+        "endpoint": "seedance-2-vip-omni-reference-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Omni Reference VIP Fast by ByteDance. Faster video generation using up to 9 image references, up to 3 video clips, ",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-extend": {
+        "endpoint": "seedance-2-extend",
+        "cost_usd": 1.05,
+        "best_for": "SD 2.0 Extend Video continues an existing SD 2.0 generated video seamlessly. Provide the original request ID and an opti",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-mini-text-to-video": {
+        "endpoint": "seedance-2-mini-text-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Seedance 2.0 Mini Text-to-Video is the fastest and most affordable text-to-video model in the Seedance lineup, generatin",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-t2v": {
+        "endpoint": "seedance-2-t2v",
+        "cost_usd": 0.75,
+        "best_for": "SD 2.0 is the latest multimodal video generation model by ByteDance, offering advanced camera control, native audio-vide",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-t2v-480p": {
+        "endpoint": "seedance-2-t2v-480p",
+        "cost_usd": 0.6,
+        "best_for": "SD 2.0 480p text-to-video generation. Faster and more cost-effective than the 720p variant, ideal for previews and draft",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-text-to-video": {
+        "endpoint": "seedance-2-text-to-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Text-to-Video (Pro) by ByteDance. Generates high-quality cinematic video from a text prompt with native audio-visua",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-text-to-video-fast": {
+        "endpoint": "seedance-2-text-to-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Text-to-Video (Fast) by ByteDance. Generates video from text at faster speeds with 4\u201315 second duration and 2K reso",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-extend": {
+        "endpoint": "seedance-2-vip-extend",
+        "cost_usd": 1.05,
+        "best_for": "SD 2.0 VIP Extend Video continues an existing SD 2.0 generated video seamlessly at 720p. Provide the original request ID",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-extend-1080p": {
+        "endpoint": "seedance-2-vip-extend-1080p",
+        "cost_usd": 2.3625,
+        "best_for": "SD 2.0 VIP Extend Video 1080p continues an existing SD 2.0 generated video seamlessly at 1080p resolution. Provide the o",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-text-to-video": {
+        "endpoint": "seedance-2-vip-text-to-video",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Text-to-Video VIP (Pro) by ByteDance. Generates high-quality cinematic video from a text prompt with priority routi",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-text-to-video-1080p": {
+        "endpoint": "seedance-2-vip-text-to-video-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Text-to-Video VIP 1080p by ByteDance. Generates cinematic 1080p video from a text prompt with priority routing, nat",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "seedance-2-vip-text-to-video-fast": {
+        "endpoint": "seedance-2-vip-text-to-video-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Text-to-Video VIP Fast by ByteDance. Faster generation with priority routing from a text prompt, 4\u201315 second durati",
         "default_args": {
           "duration": 5,
           "aspect_ratio": "16:9"
