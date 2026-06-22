@@ -1,0 +1,2182 @@
+{
+  "last_updated": "2026-06-22",
+  "notes": "Full MuAPI model catalog. Live catalog (no auth): GET https://api.muapi.ai/api/v1/models. cost_usd is per-generation. Video models: pass --image for I2V, omit for T2V. Verify endpoint if 404.",
+  "image": {
+    "default": "flux-dev",
+    "models": {
+      "ai-anime-generator": {
+        "endpoint": "ai-anime-generator",
+        "cost_usd": 0.03,
+        "best_for": "Create stunning anime-style artwork instantly with our AI Anime Generator. Customize characters, scenes, and styles effo",
+        "default_args": {}
+      },
+      "bytedance-seedream-v3": {
+        "endpoint": "bytedance-seedream-v3",
+        "cost_usd": 0.03,
+        "best_for": "Seedream is designed for generating visually rich and artistic images from text prompts. It excels at fantasy, anime, su",
+        "default_args": {}
+      },
+      "bytedance-seedream-v4": {
+        "endpoint": "bytedance-seedream-v4",
+        "cost_usd": 0.04,
+        "best_for": "Seedream v4 generates stunning, high-fidelity images from text prompts. It’s designed for creativity with strong support",
+        "default_args": {}
+      },
+      "bytedance-seedream-v4.5": {
+        "endpoint": "bytedance-seedream-v4.5",
+        "cost_usd": 0.05,
+        "best_for": "Seedream-v4.5 is ByteDance’s advanced text-to-image diffusion model designed for generating high-detail, high-contrast, ",
+        "default_args": {}
+      },
+      "bytedance-seedream-v5.0": {
+        "endpoint": "bytedance-seedream-v5.0",
+        "cost_usd": 0.0325,
+        "best_for": "Seedream 5.0 Lite is ByteDance’s next-generation text-to-image model, delivering high-fidelity AI art with advanced visu",
+        "default_args": {}
+      },
+      "chroma-image": {
+        "endpoint": "chroma-image",
+        "cost_usd": 0.02,
+        "best_for": "Croma Image is an advanced text-to-image generation model designed for high-quality, creative, and versatile visuals. It",
+        "default_args": {}
+      },
+      "flux-2-dev": {
+        "endpoint": "flux-2-dev",
+        "cost_usd": 0.015,
+        "best_for": "Flux 2 Dev is a powerful text-to-image diffusion model designed for high-quality, fast, and highly detailed visual gener",
+        "default_args": {
+          "size": "1280*720",
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "flux-2-flex": {
+        "endpoint": "flux-2-flex",
+        "cost_usd": 0.09,
+        "best_for": "Flux-2-Flex Text-to-Image is a flexible, high-fidelity generative model capable of producing detailed, imaginative, and ",
+        "default_args": {}
+      },
+      "flux-2-klein-4b": {
+        "endpoint": "flux-2-klein-4b",
+        "cost_usd": 0.0104,
+        "best_for": "Flux-2-Klein-4B is a lightweight, fast text-to-image model optimized for clear subject rendering, good prompt adherence,",
+        "default_args": {}
+      },
+      "flux-2-klein-4b-text-to-image-lora": {
+        "endpoint": "flux-2-klein-4b-text-to-image-lora",
+        "cost_usd": 0.02,
+        "best_for": "Flux-2-Klein-4B Text-to-Image with LoRA pairs the lightweight Klein 4B model with custom LoRA adapters so you can dial i",
+        "default_args": {}
+      },
+      "flux-2-klein-4b-turbo": {
+        "endpoint": "flux-2-klein-4b-turbo",
+        "cost_usd": 0.0052,
+        "best_for": "Flux-2-Klein-4B Turbo is an ultra-fast, high-efficiency text-to-image model. It is a distilled version of the Klein 4B m",
+        "default_args": {}
+      },
+      "flux-2-klein-9b": {
+        "endpoint": "flux-2-klein-9b",
+        "cost_usd": 0.013,
+        "best_for": "Flux-2-Klein-9B is a mid-size text-to-image model that balances detail quality and generation speed. It handles richer l",
+        "default_args": {}
+      },
+      "flux-2-klein-9b-text-to-image-lora": {
+        "endpoint": "flux-2-klein-9b-text-to-image-lora",
+        "cost_usd": 0.025,
+        "best_for": "Flux-2-Klein-9B Text-to-Image with LoRA combines the higher-fidelity Klein 9B base with custom LoRA adapters for richer ",
+        "default_args": {}
+      },
+      "flux-2-klein-9b-turbo": {
+        "endpoint": "flux-2-klein-9b-turbo",
+        "cost_usd": 0.0065,
+        "best_for": "Flux-2-Klein-9B Turbo is a high-performance, mid-size text-to-image model. This distilled variant of Klein 9B provides a",
+        "default_args": {}
+      },
+      "flux-2-pro": {
+        "endpoint": "flux-2-pro",
+        "cost_usd": 0.032,
+        "best_for": "Flux-2-Pro Text-to-Image is a premium, high-fidelity generative model capable of producing ultra-realistic, cinematic, a",
+        "default_args": {
+          "size": "1280*720",
+          "num_images": 1
+        }
+      },
+      "flux-dev": {
+        "endpoint": "flux-dev",
+        "cost_usd": 0.015,
+        "best_for": "Generate stunning visuals from simple text prompts. Flux Dev transforms your ideas into high-quality, creative images us",
+        "default_args": {
+          "size": "1280*720",
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "flux-kontext-dev-t2i": {
+        "endpoint": "flux-kontext-dev-t2i",
+        "cost_usd": 0.02,
+        "best_for": "Generates an image from a text prompt, with optional reference image for pose or style guidance. Ideal for controlled, c",
+        "default_args": {}
+      },
+      "flux-kontext-max-t2i": {
+        "endpoint": "flux-kontext-max-t2i",
+        "cost_usd": 0.06,
+        "best_for": "Flux Kontext Max T2I delivers photorealistic or cinematic-quality images with exceptional detail. It's optimized for hig",
+        "default_args": {}
+      },
+      "flux-kontext-pro-t2i": {
+        "endpoint": "flux-kontext-pro-t2i",
+        "cost_usd": 0.03,
+        "best_for": "Flux Kontext Pro T2I offers fast and reliable generation with creative flexibility. It supports stylized prompts, charac",
+        "default_args": {}
+      },
+      "flux-krea-dev": {
+        "endpoint": "flux-krea-dev",
+        "cost_usd": 0.015,
+        "best_for": "Flux Krea Dev is a text-to-image model built by Black Forest Labs in collaboration with Krea AI, designed to generate hi",
+        "default_args": {}
+      },
+      "flux-schnell": {
+        "endpoint": "flux-schnell",
+        "cost_usd": 0.003,
+        "best_for": "Flux Schnell is a lightning-fast image generation model designed for rapid iterations. It delivers good visual quality f",
+        "default_args": {
+          "size": "1280*720",
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "google-imagen4": {
+        "endpoint": "google-imagen4",
+        "cost_usd": 0.03,
+        "best_for": "Google Imagen 4 is the latest text-to-image AI model from DeepMind, designed to produce stunningly photorealistic images",
+        "default_args": {}
+      },
+      "google-imagen4-fast": {
+        "endpoint": "google-imagen4-fast",
+        "cost_usd": 0.02,
+        "best_for": "Imagen 4 Fast is optimized for speed and accessibility, allowing you to generate high-quality images in seconds. While s",
+        "default_args": {}
+      },
+      "google-imagen4-ultra": {
+        "endpoint": "google-imagen4-ultra",
+        "cost_usd": 0.06,
+        "best_for": "Imagen 4 Ultra is Google’s flagship model, designed for photorealism, rich textures, and production-level imagery. It pr",
+        "default_args": {}
+      },
+      "gpt-image-1.5": {
+        "endpoint": "gpt-image-1.5",
+        "cost_usd": 0.054,
+        "best_for": "GPT-Image-1.5 is a high-quality text-to-image generation model designed for rich visual reasoning, detailed compositions",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "gpt-image-2-text-to-image": {
+        "endpoint": "gpt-image-2-text-to-image",
+        "cost_usd": 0.09,
+        "best_for": "Generate high-quality images from text prompts using GPT Image 2, supporting up to 20,000 character prompts for detailed",
+        "default_args": {}
+      },
+      "gpt4o-text-to-image": {
+        "endpoint": "gpt4o-text-to-image",
+        "cost_usd": 0.04,
+        "best_for": "Generate images from text prompts using GPT-4o's vision capabilities. Ideal for basic concept visuals, diagrams, and abs",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "grok-imagine-text-to-image": {
+        "endpoint": "grok-imagine-text-to-image",
+        "cost_usd": 0.05,
+        "best_for": "Grok Imagine is xAI’s high-quality image generation model that transforms text prompts into detailed, stylish, and visua",
+        "default_args": {}
+      },
+      "grok-imagine-text-to-image-quality": {
+        "endpoint": "grok-imagine-text-to-image-quality",
+        "cost_usd": 0.05,
+        "best_for": "Grok Imagine Quality is xAI's high-fidelity text-to-image mode that prioritizes accuracy and detail over speed. It produ",
+        "default_args": {}
+      },
+      "hidream-i1-dev": {
+        "endpoint": "hidream-i1-dev",
+        "cost_usd": 0.02,
+        "best_for": "Optimized for speed, this variant generates images in just a few steps. Ideal for previews, real-time applications, and ",
+        "default_args": {
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "hidream-i1-fast": {
+        "endpoint": "hidream-i1-fast",
+        "cost_usd": 0.008,
+        "best_for": "Optimized for speed, this variant generates images in just a few steps. Ideal for previews, real-time applications, and ",
+        "default_args": {
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "hidream-i1-full": {
+        "endpoint": "hidream-i1-full",
+        "cost_usd": 0.04,
+        "best_for": "The most advanced version of HiDream I1, delivering high-resolution, detailed images with superior prompt understanding.",
+        "default_args": {
+          "num_images": 1,
+          "seed": -1
+        }
+      },
+      "hunyuan-image-2.1": {
+        "endpoint": "hunyuan-image-2.1",
+        "cost_usd": 0.035,
+        "best_for": "Hunyuan Image is a powerful text-to-image generation model that produces photorealistic and highly detailed visuals. It ",
+        "default_args": {}
+      },
+      "hunyuan-image-3.0": {
+        "endpoint": "hunyuan-image-3.0",
+        "cost_usd": 0.065,
+        "best_for": "Hunyuan Image 3.0 brings together powerful architecture (Mixture-of-Experts + autoregressive style) to produce richly de",
+        "default_args": {}
+      },
+      "ideogram-v3-t2i": {
+        "endpoint": "ideogram-v3-t2i",
+        "cost_usd": 0.02,
+        "best_for": "Ideogram v3 is an advanced text-to-image model designed for creating highly detailed and visually striking images direct",
+        "default_args": {}
+      },
+      "kling-o1-text-to-image": {
+        "endpoint": "kling-o1-text-to-image",
+        "cost_usd": 0.036,
+        "best_for": "Kling O1 Text-to-Image is a high-fidelity creative image model that converts rich natural-language prompts into ultra-de",
+        "default_args": {}
+      },
+      "kling-o3-image": {
+        "endpoint": "kling-o3-image",
+        "cost_usd": 0.027,
+        "best_for": "Generate detailed photoreal and stylised images from text prompts using Kling O3. Supports 1K/2K/4K resolutions, multipl",
+        "default_args": {}
+      },
+      "leonardoai-lucid-origin": {
+        "endpoint": "leonardoai-lucid-origin",
+        "cost_usd": 0.03,
+        "best_for": "Lucid Origin is LeonardoAI’s advanced image generation model, designed for ultra-realistic, vibrant, and highly detailed",
+        "default_args": {}
+      },
+      "leonardoai-phoenix-1.0": {
+        "endpoint": "leonardoai-phoenix-1.0",
+        "cost_usd": 0.05,
+        "best_for": "LeonardoAI Phoenix 1.0 is a professional-grade AI image model designed for realistic, cinematic, and highly detailed vis",
+        "default_args": {}
+      },
+      "midjourney-niji": {
+        "endpoint": "midjourney-niji",
+        "cost_usd": 0.1,
+        "best_for": "Generate 4 anime and illustration-style images per run with Midjourney Niji. Optimized for character art, manga, and sty",
+        "default_args": {}
+      },
+      "midjourney-v7": {
+        "endpoint": "midjourney-v7",
+        "cost_usd": 0.1,
+        "best_for": "Generate 4 photorealistic images per run with Midjourney V7. Supports text-to-image and reference image guidance via sou",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "midjourney-v8": {
+        "endpoint": "midjourney-v8",
+        "cost_usd": 0.1,
+        "best_for": "Generate 4 photorealistic images per run with Midjourney V8. Improved coherence and detail over V7. Supports text-to-ima",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "nano-banana": {
+        "endpoint": "nano-banana",
+        "cost_usd": 0.03,
+        "best_for": "Nano Banana is an advanced AI model excelling in natural language-driven image generation and editing. It produces hyper",
+        "default_args": {}
+      },
+      "nano-banana-2": {
+        "endpoint": "nano-banana-2",
+        "cost_usd": 0.06,
+        "best_for": "Nano Banana 2 (Gemini 3.1 Flash Image) is Google's most advanced image generation model, combining speed with high-fidel",
+        "default_args": {
+          "aspect_ratio": "16:9",
+          "num_images": 1
+        }
+      },
+      "nano-banana-pro": {
+        "endpoint": "nano-banana-pro",
+        "cost_usd": 0.12,
+        "best_for": "Nano Banana 2 is the next-generation image generation developed by Google DeepMind, following the original Nano Banana (",
+        "default_args": {
+          "aspect_ratio": "16:9",
+          "resolution": "2K",
+          "num_images": 1
+        }
+      },
+      "neta-lumina": {
+        "endpoint": "neta-lumina",
+        "cost_usd": 0.02,
+        "best_for": "Neta Lumina is a powerful anime-style text-to-image model developed by Neta.art Lab. It’s built on Lumina-Image-2.0, fin",
+        "default_args": {}
+      },
+      "perfect-pony-xl": {
+        "endpoint": "perfect-pony-xl",
+        "cost_usd": 0.02,
+        "best_for": "Pony XL is a high-quality image generation model based on Stable Diffusion XL architecture. It specializes in character ",
+        "default_args": {}
+      },
+      "qwen-image": {
+        "endpoint": "qwen-image",
+        "cost_usd": 0.03,
+        "best_for": "Generate high-quality, detailed images from text prompts in various styles — from realistic to artistic — perfect for cr",
+        "default_args": {}
+      },
+      "qwen-image-2.0": {
+        "endpoint": "qwen-image-2.0",
+        "cost_usd": 0.04,
+        "best_for": "Qwen 2.0 Text to Image model with enhanced realism.",
+        "default_args": {}
+      },
+      "qwen-image-2.0-pro": {
+        "endpoint": "qwen-image-2.0-pro",
+        "cost_usd": 0.09,
+        "best_for": "Qwen 2.0 Pro Text to Image model with maximum realism and fidelity.",
+        "default_args": {}
+      },
+      "reve-text-to-image": {
+        "endpoint": "reve-text-to-image",
+        "cost_usd": 0.032,
+        "best_for": "Generate images from text prompts using reve's vision capabilities. Ideal for basic concept visuals, diagrams, and abstr",
+        "default_args": {}
+      },
+      "sdxl-image": {
+        "endpoint": "sdxl-image",
+        "cost_usd": 0.004,
+        "best_for": "SDXL is a high-quality, large Stable Diffusion model for creating photorealistic and stylized images from text. It excel",
+        "default_args": {}
+      },
+      "tiktok-carousel": {
+        "endpoint": "tiktok-carousel",
+        "cost_usd": 0.028,
+        "best_for": "AI TikTok Carousel Generator — create viral TikTok carousel posts from a single text prompt. Choose a proven storytellin",
+        "default_args": {}
+      },
+      "vidu-q2-text-to-image": {
+        "endpoint": "vidu-q2-text-to-image",
+        "cost_usd": 0.04,
+        "best_for": "VIDU Text-to-Image Q2 is a high-quality generative model focused on producing vivid, dynamic, and cinematic still images",
+        "default_args": {}
+      },
+      "wan2.1-text-to-image": {
+        "endpoint": "wan2.1-text-to-image",
+        "cost_usd": 0.03,
+        "best_for": "WAN 2.1 is a powerful AI model that transforms text prompts into high-resolution, photorealistic images. It excels at de",
+        "default_args": {}
+      },
+      "wan2.5-text-to-image": {
+        "endpoint": "wan2.5-text-to-image",
+        "cost_usd": 0.04,
+        "best_for": "WAN 2.5 Text-to-Image generates high-quality, realistic or stylized images from textual descriptions. It supports detail",
+        "default_args": {}
+      },
+      "wan2.6-text-to-image": {
+        "endpoint": "wan2.6-text-to-image",
+        "cost_usd": 0.04,
+        "best_for": "WAN 2.6 Text-to-Image generates detailed, cinematic still images from text prompts. It focuses on strong composition, at",
+        "default_args": {}
+      },
+      "wan2.7-text-to-image": {
+        "endpoint": "wan2.7-text-to-image",
+        "cost_usd": 0.05,
+        "best_for": "Alibaba WAN 2.7 Text-to-Image generates high-quality images from text prompts with thinking mode for enhanced image qual",
+        "default_args": {}
+      },
+      "wan2.7-text-to-image-pro": {
+        "endpoint": "wan2.7-text-to-image-pro",
+        "cost_usd": 0.1,
+        "best_for": "Alibaba WAN 2.7 Text-to-Image Pro generates high-quality images up to 4K from text prompts with thinking mode for enhanc",
+        "default_args": {}
+      },
+      "z-image-base": {
+        "endpoint": "z-image-base",
+        "cost_usd": 0.013,
+        "best_for": "Z-Image Base is a general-purpose text-to-image model designed for reliable, high-quality image generation from natural ",
+        "default_args": {}
+      },
+      "z-image-p": {
+        "endpoint": "z-image-p",
+        "cost_usd": 0.004,
+        "best_for": "Z-Image P is based on PiAPI's Qubico/z-image text-to-image model.",
+        "default_args": {}
+      },
+      "z-image-turbo": {
+        "endpoint": "z-image-turbo",
+        "cost_usd": 0.007,
+        "best_for": "Z-Image Turbo is a high-speed text-to-image model optimized for fast creative generation. It produces detailed, high-con",
+        "default_args": {}
+      }
+    }
+  },
+  "image_edit": {
+    "default": "flux-kontext-dev-i2i",
+    "models": {
+      "add-image-watermark": {
+        "endpoint": "add-image-watermark",
+        "cost_usd": 0.0,
+        "best_for": "Add custom watermark to images with adjustable position, opacity, and size. Free local processing using PIL.",
+        "default_args": {}
+      },
+      "ai-background-remover": {
+        "endpoint": "ai-background-remover",
+        "cost_usd": 0.01,
+        "best_for": "Instantly remove image backgrounds with pixel-perfect precision. Ideal for product photos, profile pictures, and creativ",
+        "default_args": {}
+      },
+      "ai-color-photo": {
+        "endpoint": "ai-color-photo",
+        "cost_usd": 0.01,
+        "best_for": "Automatically add lifelike colors to black-and-white images. Our AI brings history to life with natural tones, accurate ",
+        "default_args": {}
+      },
+      "ai-dress-change": {
+        "endpoint": "ai-dress-change",
+        "cost_usd": 0.1,
+        "best_for": "Instantly change outfits in images using AI. Visualize different clothing styles without the need for physical trials—pe",
+        "default_args": {}
+      },
+      "ai-ghibli-style": {
+        "endpoint": "ai-ghibli-style",
+        "cost_usd": 0.05,
+        "best_for": "Bring your imagination to life with art inspired by the enchanting world of Studio Ghibli. This AI model generates dream",
+        "default_args": {}
+      },
+      "ai-image-extension": {
+        "endpoint": "ai-image-extension",
+        "cost_usd": 0.03,
+        "best_for": "Expand the edges of any image with AI. This model continues your original photo or artwork beyond its borders while matc",
+        "default_args": {}
+      },
+      "ai-image-face-swap": {
+        "endpoint": "ai-image-face-swap",
+        "cost_usd": 0.02,
+        "best_for": "Advanced facial recognition and blending algorithms enable precise face swaps while preserving skin tone, lighting, and ",
+        "default_args": {}
+      },
+      "ai-object-eraser": {
+        "endpoint": "ai-object-eraser",
+        "cost_usd": 0.05,
+        "best_for": "Easily remove unwanted objects, people, or text from any image using AI. Just select the area you want to erase, and the",
+        "default_args": {}
+      },
+      "ai-product-photography": {
+        "endpoint": "ai-product-photography",
+        "cost_usd": 0.05,
+        "best_for": "Create professional-grade product photos using AI. Upload your item image and describe it with a prompt, and get studio-",
+        "default_args": {}
+      },
+      "ai-product-shot": {
+        "endpoint": "ai-product-shot",
+        "cost_usd": 0.06,
+        "best_for": "Instantly generate studio-quality product images with AI. Upload your item photo and get clean, stylized shots perfect f",
+        "default_args": {}
+      },
+      "ai-skin-enhancer": {
+        "endpoint": "ai-skin-enhancer",
+        "cost_usd": 0.01,
+        "best_for": "Smooth skin, reduce blemishes, and enhance complexion with natural-looking results. Perfect for portraits, selfies, and ",
+        "default_args": {}
+      },
+      "bytedance-seededit-v3": {
+        "endpoint": "bytedance-seededit-v3",
+        "cost_usd": 0.03,
+        "best_for": "Seededit allows precise edits to images using masks and prompt guidance. Whether you're replacing backgrounds, changing ",
+        "default_args": {}
+      },
+      "bytedance-seedream-v4-edit": {
+        "endpoint": "bytedance-seedream-v4-edit",
+        "cost_usd": 0.04,
+        "best_for": "Seedream v4 Edit refines or transforms existing images based on a new prompt and a reference. Instead of masking, you pr",
+        "default_args": {}
+      },
+      "bytedance-seedream-v4.5-edit": {
+        "endpoint": "bytedance-seedream-v4.5-edit",
+        "cost_usd": 0.05,
+        "best_for": "Seedream-v4.5 Edit allows you to transform an existing image using natural-language instructions. It preserves the core ",
+        "default_args": {}
+      },
+      "bytedance-seedream-v5.0-edit": {
+        "endpoint": "bytedance-seedream-v5.0-edit",
+        "cost_usd": 0.0325,
+        "best_for": "Seedream 5.0 Lite Edit is an advanced image transformation model by ByteDance, enabling precise, controllable edits usin",
+        "default_args": {}
+      },
+      "flux-2-dev-edit": {
+        "endpoint": "flux-2-dev-edit",
+        "cost_usd": 0.031,
+        "best_for": "Flux 2 Dev Edit takes an existing image and applies transformations, replacements, or style changes based on a text inst",
+        "default_args": {}
+      },
+      "flux-2-flex-edit": {
+        "endpoint": "flux-2-flex-edit",
+        "cost_usd": 0.09,
+        "best_for": "Flux-2-Flex Edit allows flexible transformation of an existing image: object replacement, material changes, lighting adj",
+        "default_args": {}
+      },
+      "flux-2-klein-4b-edit": {
+        "endpoint": "flux-2-klein-4b-edit",
+        "cost_usd": 0.0156,
+        "best_for": "Flux-2-Klein-4B Edit applies lightweight, instruction-based edits to an existing image. It’s best for clear object swaps",
+        "default_args": {}
+      },
+      "flux-2-klein-4b-edit-lora": {
+        "endpoint": "flux-2-klein-4b-edit-lora",
+        "cost_usd": 0.025,
+        "best_for": "Flux-2-Klein-4B Edit with LoRA performs instruction-based image edits while applying custom LoRA adapters, letting you p",
+        "default_args": {}
+      },
+      "flux-2-klein-4b-turbo-edit": {
+        "endpoint": "flux-2-klein-4b-turbo-edit",
+        "cost_usd": 0.0078,
+        "best_for": "Flux-2-Klein-4B Turbo Edit provides ultra-fast, instruction-based image editing. This high-efficiency variant of Klein 4",
+        "default_args": {}
+      },
+      "flux-2-klein-9b-edit": {
+        "endpoint": "flux-2-klein-9b-edit",
+        "cost_usd": 0.0208,
+        "best_for": "Flux-2-Klein-9B Edit performs higher-quality image edits with better detail retention, lighting consistency, and texture",
+        "default_args": {}
+      },
+      "flux-2-klein-9b-edit-lora": {
+        "endpoint": "flux-2-klein-9b-edit-lora",
+        "cost_usd": 0.03,
+        "best_for": "Flux-2-Klein-9B Edit with LoRA delivers higher-fidelity, instruction-based edits combined with custom LoRA adapters. Bes",
+        "default_args": {}
+      },
+      "flux-2-klein-9b-turbo-edit": {
+        "endpoint": "flux-2-klein-9b-turbo-edit",
+        "cost_usd": 0.0104,
+        "best_for": "Flux-2-Klein-9B Turbo Edit offers high-quality, ultra-fast image editing with superior detail retention. This high-effic",
+        "default_args": {}
+      },
+      "flux-2-pro-edit": {
+        "endpoint": "flux-2-pro-edit",
+        "cost_usd": 0.032,
+        "best_for": "Flux-2-Pro Edit enables precise, high-fidelity modifications to an existing image while preserving its lighting, style, ",
+        "default_args": {}
+      },
+      "flux-kontext-dev-i2i": {
+        "endpoint": "flux-kontext-dev-i2i",
+        "cost_usd": 0.02,
+        "best_for": "Takes an input images and transforms it based on a new prompt. Keeps structure or pose while changing style, appearance,",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "flux-kontext-effects": {
+        "endpoint": "flux-kontext-effects",
+        "cost_usd": 0.04,
+        "best_for": "Flux Kontext Effects is a creative image and video model that applies stylized transformations, cinematic filters, and a",
+        "default_args": {}
+      },
+      "flux-kontext-max-i2i": {
+        "endpoint": "flux-kontext-max-i2i",
+        "cost_usd": 0.06,
+        "best_for": "Flux Kontext Max I2I in Max mode allows precise image enhancement and visual transformations while retaining the source ",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "flux-kontext-pro-i2i": {
+        "endpoint": "flux-kontext-pro-i2i",
+        "cost_usd": 0.03,
+        "best_for": "Flux Kontext Pro I2I variant enables transforming base images into refined artwork while keeping structure intact. It’s ",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "flux-pulid": {
+        "endpoint": "flux-pulid",
+        "cost_usd": 0.04,
+        "best_for": "Flux PuLID is an innovative image-to-image model that enables consistent face rendering across different styles or scene",
+        "default_args": {}
+      },
+      "flux-redux": {
+        "endpoint": "flux-redux",
+        "cost_usd": 0.01,
+        "best_for": "Flux Redux is a transformation model that reimagines or enhances your input images while preserving their main structure",
+        "default_args": {}
+      },
+      "gemini-omni-character": {
+        "endpoint": "gemini-omni-character",
+        "cost_usd": 0.0,
+        "best_for": "Generate a reusable character from a single reference image and a text description. Optionally attach a voice profile cr",
+        "default_args": {}
+      },
+      "gpt-image-1.5-edit": {
+        "endpoint": "gpt-image-1.5-edit",
+        "cost_usd": 0.054,
+        "best_for": "GPT-Image-1.5 Edit applies precise, instruction-based modifications to an existing image while preserving composition, l",
+        "default_args": {}
+      },
+      "gpt-image-2-image-to-image": {
+        "endpoint": "gpt-image-2-image-to-image",
+        "cost_usd": 0.09,
+        "best_for": "Transform and edit existing images using GPT Image 2 with text instructions. Supports up to 16 input images for precise ",
+        "default_args": {}
+      },
+      "gpt4o-edit": {
+        "endpoint": "gpt4o-edit",
+        "cost_usd": 0.04,
+        "best_for": "Edit a specific part of an image using natural language. Ideal for object removal, replacement, or content-aware filling",
+        "default_args": {}
+      },
+      "gpt4o-image-to-image": {
+        "endpoint": "gpt4o-image-to-image",
+        "cost_usd": 0.04,
+        "best_for": "Transform an input image based on a new prompt — like changing style, lighting, or composition. Useful for reinterpretin",
+        "default_args": {}
+      },
+      "grok-imagine-image-to-image": {
+        "endpoint": "grok-imagine-image-to-image",
+        "cost_usd": 0.05,
+        "best_for": "Grok Imagine Image-to-Image transforms an existing image using natural language instructions while preserving scene stru",
+        "default_args": {}
+      },
+      "ideogram-character": {
+        "endpoint": "ideogram-character",
+        "cost_usd": 0.15,
+        "best_for": "Ideogram’s Character Reference model enables consistent character generation using just one reference image. Upload a cl",
+        "default_args": {}
+      },
+      "ideogram-v3-reframe": {
+        "endpoint": "ideogram-v3-reframe",
+        "cost_usd": 0.15,
+        "best_for": "Ideogram V3 Reframe is a specialized image-to-image model built on Ideogram 3.0, designed to intelligently extend and ad",
+        "default_args": {}
+      },
+      "image-effects": {
+        "endpoint": "image-effects",
+        "cost_usd": 0.03,
+        "best_for": "AI Image Effects applies advanced visual transformations, color grading, and cinematic filters to create stunning images",
+        "default_args": {}
+      },
+      "kling-o1-edit-image": {
+        "endpoint": "kling-o1-edit-image",
+        "cost_usd": 0.036,
+        "best_for": "Kling O1 Image Edit applies targeted transformations to an existing image while preserving composition, lighting, and vi",
+        "default_args": {}
+      },
+      "kling-o3-image-edit": {
+        "endpoint": "kling-o3-image-edit",
+        "cost_usd": 0.027,
+        "best_for": "Edit and transform existing images using Kling O3 with natural language instructions. Supports up to 10 reference images",
+        "default_args": {}
+      },
+      "minimax-image-01-subject-reference": {
+        "endpoint": "minimax-image-01-subject-reference",
+        "cost_usd": 0.01,
+        "best_for": "Minimax’s I2I “Subject Reference” model enables you to transform images while preserving the appearance of a subject usi",
+        "default_args": {}
+      },
+      "nano-banana-2-edit": {
+        "endpoint": "nano-banana-2-edit",
+        "cost_usd": 0.06,
+        "best_for": "Nano Banana 2 (Gemini 3.1 Flash Image) is Google's most advanced image generation model, combining speed with high-fidel",
+        "default_args": {}
+      },
+      "nano-banana-edit": {
+        "endpoint": "nano-banana-edit",
+        "cost_usd": 0.03,
+        "best_for": "Nano Banana is a mysterious, high-performance image model. It excels at precise, language-driven edits and consistent ch",
+        "default_args": {
+          "num_images": 1
+        }
+      },
+      "nano-banana-effects": {
+        "endpoint": "nano-banana-effects",
+        "cost_usd": 0.03,
+        "best_for": "Nano Banana Effects is a creative visual effects model designed to transform ordinary images into fun, stylized, and eye",
+        "default_args": {}
+      },
+      "nano-banana-pro-edit": {
+        "endpoint": "nano-banana-pro-edit",
+        "cost_usd": 0.12,
+        "best_for": "Nano Banana 2 Edit is the next-generation image editing model developed by Google DeepMind, following the original Nano ",
+        "default_args": {
+          "aspect_ratio": "1:1",
+          "resolution": "2K",
+          "num_images": 1
+        }
+      },
+      "photo-pack": {
+        "endpoint": "photo-pack",
+        "cost_usd": 0.3,
+        "best_for": "Generate a pack of high-quality, professional portraits in various styles (LinkedIn, CEO, Tinder, etc.) while preserving",
+        "default_args": {}
+      },
+      "portrait-stylist": {
+        "endpoint": "portrait-stylist",
+        "cost_usd": 0.01,
+        "best_for": "Professional AI portrait styles including hair, makeup, style, and fashion transformations.",
+        "default_args": {}
+      },
+      "qwen-image-2.0-edit": {
+        "endpoint": "qwen-image-2.0-edit",
+        "cost_usd": 0.04,
+        "best_for": "Qwen 2.0 Image Edit model with precise background modification and enhancements.",
+        "default_args": {}
+      },
+      "qwen-image-2.0-pro-edit": {
+        "endpoint": "qwen-image-2.0-pro-edit",
+        "cost_usd": 0.09,
+        "best_for": "Qwen 2.0 Pro Image Edit model with maximum precision and modifications.",
+        "default_args": {}
+      },
+      "qwen-image-edit": {
+        "endpoint": "qwen-image-edit",
+        "cost_usd": 0.03,
+        "best_for": "The Qwen Edit Image Model allows you to modify existing images using text-based editing prompts. Instead of generating f",
+        "default_args": {}
+      },
+      "qwen-image-edit-2511": {
+        "endpoint": "qwen-image-edit-2511",
+        "cost_usd": 0.04,
+        "best_for": "Qwen Image Edit 2511 performs precise, instruction-driven edits on an existing image while preserving composition, light",
+        "default_args": {}
+      },
+      "qwen-image-edit-plus": {
+        "endpoint": "qwen-image-edit-plus",
+        "cost_usd": 0.03,
+        "best_for": "Qwen Image Edit Plus is an upgraded image-editing model that supports multiple image references and superior text editin",
+        "default_args": {}
+      },
+      "qwen-image-edit-plus-lora": {
+        "endpoint": "qwen-image-edit-plus-lora",
+        "cost_usd": 0.04,
+        "best_for": "Qwen-Image-Edit-Plus (2509) is 20B MMDiT image-to-image editor supporting multi-image edits, single-image consistency, a",
+        "default_args": {}
+      },
+      "qwen-text-to-image-2512": {
+        "endpoint": "qwen-text-to-image-2512",
+        "cost_usd": 0.04,
+        "best_for": "Qwen Image Text-to-Image 2512 generates high-resolution, visually consistent images from text prompts. It focuses on str",
+        "default_args": {}
+      },
+      "reve-image-edit": {
+        "endpoint": "reve-image-edit",
+        "cost_usd": 0.05,
+        "best_for": "ReVE Edit is a next-generation image editing model that allows users to apply detailed visual transformations through na",
+        "default_args": {}
+      },
+      "sd-2-character": {
+        "endpoint": "sd-2-character",
+        "cost_usd": 0.18,
+        "best_for": "[Beta] Turn fictional character references into reusable video characters. Upload reference images and describe the outf",
+        "default_args": {}
+      },
+      "vidu-q2-reference-to-image": {
+        "endpoint": "vidu-q2-reference-to-image",
+        "cost_usd": 0.032,
+        "best_for": "VIDU Reference-to-Image Q2 generates new high-quality images based on one or more reference images. It preserves the key",
+        "default_args": {}
+      },
+      "wan2.5-image-edit": {
+        "endpoint": "wan2.5-image-edit",
+        "cost_usd": 0.04,
+        "best_for": "The Wan2.5 Edit Image model allows you to transform existing images with precision and creativity. By providing an image",
+        "default_args": {}
+      },
+      "wan2.6-image-edit": {
+        "endpoint": "wan2.6-image-edit",
+        "cost_usd": 0.045,
+        "best_for": "WAN 2.6 Image Edit applies targeted, instruction-based edits to an existing image while preserving composition, perspect",
+        "default_args": {}
+      },
+      "wan2.7-image-edit": {
+        "endpoint": "wan2.7-image-edit",
+        "cost_usd": 0.05,
+        "best_for": "Alibaba WAN 2.7 Image Edit performs prompt-driven image editing with support for multiple-image references.",
+        "default_args": {}
+      },
+      "wan2.7-image-edit-pro": {
+        "endpoint": "wan2.7-image-edit-pro",
+        "cost_usd": 0.1,
+        "best_for": "Alibaba WAN 2.7 Image Edit Pro performs prompt-driven image editing with multi-image reference support and up to 2K outp",
+        "default_args": {}
+      }
+    }
+  },
+  "video": {
+    "default": "kling-v3.0-pro-image-to-video",
+    "models": {
+      "ai-video-effects": {
+        "endpoint": "ai-video-effects",
+        "cost_usd": 0.3,
+        "best_for": "AI Video Effects applies advanced visual transformations, color grading, and cinematic filters to create stunning videos",
+        "default_args": {}
+      },
+      "gemini-omni-image-to-video": {
+        "endpoint": "gemini-omni-image-to-video",
+        "cost_usd": 1.5,
+        "best_for": "Gemini Omni Image to Video — animate one or more reference images with a text prompt. Unified reasoning across modalitie",
+        "default_args": {}
+      },
+      "grok-imagine-image-to-video": {
+        "endpoint": "grok-imagine-image-to-video",
+        "cost_usd": 0.15,
+        "best_for": "Grok Imagine is xAI’s multimodal image-to-video model, capable of animating still images into cinematic videos from 6 to",
+        "default_args": {}
+      },
+      "grok-imagine-video-1-5-preview": {
+        "endpoint": "grok-imagine-video-1-5-preview",
+        "cost_usd": 0.64,
+        "best_for": "Generate videos from images using the Grok Imagine Video 1.5 Preview model with support for multiple aspect ratios, reso",
+        "default_args": {}
+      },
+      "happy-horse-1-image-to-video-1080p": {
+        "endpoint": "happy-horse-1-image-to-video-1080p",
+        "cost_usd": 1.8,
+        "best_for": "Happy Horse 1.0 Image to Video — bring still images to life with fluid, expressive animation and fine-grained motion con",
+        "default_args": {}
+      },
+      "happy-horse-1-image-to-video-720p": {
+        "endpoint": "happy-horse-1-image-to-video-720p",
+        "cost_usd": 0.9,
+        "best_for": "Happy Horse 1.0 Image to Video (720p) — bring still images to life with fluid, expressive animation at 720p output resol",
+        "default_args": {}
+      },
+      "happy-horse-1-reference-to-video-1080p": {
+        "endpoint": "happy-horse-1-reference-to-video-1080p",
+        "cost_usd": 2.1,
+        "best_for": "Happy Horse 1.0 Reference to Video (1080p) - generate expressive 1080p video clips conditioned on 1-9 reference images p",
+        "default_args": {}
+      },
+      "happy-horse-1-reference-to-video-720p": {
+        "endpoint": "happy-horse-1-reference-to-video-720p",
+        "cost_usd": 1.05,
+        "best_for": "Happy Horse 1.0 Reference to Video (720p) - generate expressive 720p video clips conditioned on 1-9 reference images plu",
+        "default_args": {}
+      },
+      "hunyuan-image-to-video": {
+        "endpoint": "hunyuan-image-to-video",
+        "cost_usd": 0.15,
+        "best_for": "Hunyuan I2V takes a static image and generates realistic video animations by interpreting motion and context. It works w",
+        "default_args": {}
+      },
+      "kling-o1-image-to-video": {
+        "endpoint": "kling-o1-image-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling O1’s Image-to-Video mode transforms one or more reference images into short cinematic video clips by adding natura",
+        "default_args": {}
+      },
+      "kling-o1-reference-to-video": {
+        "endpoint": "kling-o1-reference-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling O1’s Reference-to-Video mode generates a dynamic video using one or multiple reference images as the visual founda",
+        "default_args": {}
+      },
+      "kling-o1-standard-image-to-video": {
+        "endpoint": "kling-o1-standard-image-to-video",
+        "cost_usd": 0.5,
+        "best_for": "Kling O1 Standard Image-to-Video converts a single still image into a short, natural-looking video clip. It preserves th",
+        "default_args": {}
+      },
+      "kling-o1-standard-reference-to-video": {
+        "endpoint": "kling-o1-standard-reference-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling O1 Standard Reference-to-Video generates a smooth, realistic video using one or multiple reference images as visua",
+        "default_args": {}
+      },
+      "kling-v2.1-master-i2v": {
+        "endpoint": "kling-v2.1-master-i2v",
+        "cost_usd": 0.3,
+        "best_for": "Kling 2.1 Master’s I2V animates a still image into a coherent video sequence. It interprets motion, environment, and con",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "kling-v2.1-pro-i2v": {
+        "endpoint": "kling-v2.1-pro-i2v",
+        "cost_usd": 0.4,
+        "best_for": "Kling 2.1 Pro is the high-end version of Kuaishou’s video generation model, offering enhanced realism, longer motion seq",
+        "default_args": {}
+      },
+      "kling-v2.1-standard-i2v": {
+        "endpoint": "kling-v2.1-standard-i2v",
+        "cost_usd": 0.225,
+        "best_for": "Kling 2.1 Standard (developed by Kuaishou) brings static images to life by generating smooth, realistic video clips from",
+        "default_args": {}
+      },
+      "kling-v2.5-turbo-pro-i2v": {
+        "endpoint": "kling-v2.5-turbo-pro-i2v",
+        "cost_usd": 0.45,
+        "best_for": "Kling 2.5 Turbo Pro: Top-tier image-to-video generation with unparalleled motion fluidity, cinematic visuals, and except",
+        "default_args": {}
+      },
+      "kling-v2.5-turbo-std-i2v": {
+        "endpoint": "kling-v2.5-turbo-std-i2v",
+        "cost_usd": 0.28,
+        "best_for": "Kling 2.5 Turbo Std: Top-tier image-to-video generation with unparalleled motion fluidity, cinematic visuals, and except",
+        "default_args": {}
+      },
+      "kling-v2.6-pro-i2v": {
+        "endpoint": "kling-v2.6-pro-i2v",
+        "cost_usd": 0.9,
+        "best_for": "Kling-v2.6-Pro Image-to-Video transforms a single creative image into a short cinematic video. It preserves the original",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "kling-v3-turbo-pro-image-to-video": {
+        "endpoint": "kling-v3-turbo-pro-image-to-video",
+        "cost_usd": 0.7,
+        "best_for": "Generate fast, high-quality videos from a single image using Kling v3 Turbo Pro (1080p). Supports durations from 3 to 15",
+        "default_args": {}
+      },
+      "kling-v3-turbo-standard-image-to-video": {
+        "endpoint": "kling-v3-turbo-standard-image-to-video",
+        "cost_usd": 0.56,
+        "best_for": "Generate fast, high-quality videos from a single image using Kling v3 Turbo Standard (720p). Supports durations from 3 t",
+        "default_args": {}
+      },
+      "kling-v3.0-4k-image-to-video": {
+        "endpoint": "kling-v3.0-4k-image-to-video",
+        "cost_usd": 2.0,
+        "best_for": "Kling 3.0 4K Image-to-Video animates a single input image into ultra-high-resolution 3840×2160 video with smooth camera ",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "kling-v3.0-omni-4k-image-to-video": {
+        "endpoint": "kling-v3.0-omni-4k-image-to-video",
+        "cost_usd": 2.6785,
+        "best_for": "Kling v3 Omni at 4K. Multi-image reference video generation — supply up to 4 images and reference them in your prompt wi",
+        "default_args": {}
+      },
+      "kling-v3.0-omni-pro-image-to-video": {
+        "endpoint": "kling-v3.0-omni-pro-image-to-video",
+        "cost_usd": 0.56,
+        "best_for": "Kling v3 Omni at 1080P. Multi-image reference video generation — supply up to 4 images and reference them in your prompt",
+        "default_args": {}
+      },
+      "kling-v3.0-omni-standard-image-to-video": {
+        "endpoint": "kling-v3.0-omni-standard-image-to-video",
+        "cost_usd": 0.42,
+        "best_for": "Kling v3 Omni at 720P. Multi-image reference video generation — supply up to 4 images and reference them in your prompt ",
+        "default_args": {}
+      },
+      "kling-v3.0-pro-image-to-video": {
+        "endpoint": "kling-v3.0-pro-image-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling 3.0 Pro Image-to-Video animates a single input image into a high-quality, realistic video with smooth camera motio",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "kling-v3.0-standard-image-to-video": {
+        "endpoint": "kling-v3.0-standard-image-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling 3.0 Standard Image-to-Video animates a single input image into a short, realistic video with smooth, stable motion",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "leonardoai-motion-2.0": {
+        "endpoint": "leonardoai-motion-2.0",
+        "cost_usd": 0.4,
+        "best_for": "Motion 2.0 is Leonardo.AI's cutting-edge model for creating high-quality 5-second videos from text prompts. It offers en",
+        "default_args": {}
+      },
+      "ltx-2-19b-image-to-video": {
+        "endpoint": "ltx-2-19b-image-to-video",
+        "cost_usd": 0.6,
+        "best_for": "LTX-2-19B Image-to-Video animates a single image into a coherent cinematic clip with strong temporal stability. It prese",
+        "default_args": {}
+      },
+      "ltx-2-fast-image-to-video": {
+        "endpoint": "ltx-2-fast-image-to-video",
+        "cost_usd": 0.46,
+        "best_for": "LTX-2 Fast is a speed-optimized mode of the LTX-2 engine by Lightricks, focused on generating short video clips from a s",
+        "default_args": {}
+      },
+      "ltx-2-pro-image-to-video": {
+        "endpoint": "ltx-2-pro-image-to-video",
+        "cost_usd": 0.46,
+        "best_for": "LTX-2 Pro is the high-fidelity video-generation engine by Lightricks designed for professional workflows, supporting bot",
+        "default_args": {}
+      },
+      "ltx-2.3-image-to-video": {
+        "endpoint": "ltx-2.3-image-to-video",
+        "cost_usd": 0.104,
+        "best_for": "LTX-2.3 Image-to-Video animates a single image into a coherent cinematic clip. It preserves scene composition and lighti",
+        "default_args": {}
+      },
+      "minimax-hailuo-02-pro-i2v": {
+        "endpoint": "minimax-hailuo-02-pro-i2v",
+        "cost_usd": 0.6,
+        "best_for": "Advanced image-to-video with cinematic realism. Adds dynamic camera motion, realistic physics, and atmospheric detail fo",
+        "default_args": {}
+      },
+      "minimax-hailuo-02-standard-i2v": {
+        "endpoint": "minimax-hailuo-02-standard-i2v",
+        "cost_usd": 0.15,
+        "best_for": "Transforms an image into video with light, natural motion. Great for social media, quick animations, and previews.",
+        "default_args": {}
+      },
+      "minimax-hailuo-2.3-fast": {
+        "endpoint": "minimax-hailuo-2.3-fast",
+        "cost_usd": 0.24,
+        "best_for": "Minimax Hailuo 2.3 Fast is the lightweight, high-speed version of the Hailuo 2.3 family — designed for creators who need",
+        "default_args": {}
+      },
+      "minimax-hailuo-2.3-pro-i2v": {
+        "endpoint": "minimax-hailuo-2.3-pro-i2v",
+        "cost_usd": 0.63,
+        "best_for": "Hailuo 2.3 Pro I2V breathes life into still images with stunning motion synthesis and cinematic camera control. Using de",
+        "default_args": {
+          "duration": 6,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "minimax-hailuo-2.3-standard-i2v": {
+        "endpoint": "minimax-hailuo-2.3-standard-i2v",
+        "cost_usd": 0.36,
+        "best_for": "Hailuo 2.3 Standard I2V converts still images into visually immersive motion clips with stable dynamics and realistic mo",
+        "default_args": {}
+      },
+      "motion-controls": {
+        "endpoint": "motion-controls",
+        "cost_usd": 0.3,
+        "best_for": "Motion Controls adds dynamic camera movements, speed ramps, and zoom effects to bring your images to life as smooth, eng",
+        "default_args": {}
+      },
+      "openai-sora-2-image-to-video": {
+        "endpoint": "openai-sora-2-image-to-video",
+        "cost_usd": 0.8,
+        "best_for": "Sora 2’s I2V lets you bring still images to life by animating them into short video clips with natural motion, audio, an",
+        "default_args": {}
+      },
+      "openai-sora-2-pro-image-to-video": {
+        "endpoint": "openai-sora-2-pro-image-to-video",
+        "cost_usd": 2.4,
+        "best_for": "Sora 2 Pro I2V brings still images to life, transforming them into short videos with natural motion, realistic lighting,",
+        "default_args": {}
+      },
+      "ovi-image-to-video": {
+        "endpoint": "ovi-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Ovi is a unified audio–video generation model that can transform a static image plus a descriptive prompt into a short v",
+        "default_args": {}
+      },
+      "pixverse-v4.5-i2v": {
+        "endpoint": "pixverse-v4.5-i2v",
+        "cost_usd": 0.3,
+        "best_for": "Upload an image and PixVerse v4.5 will breathe life into it with smooth camera motion, realistic effects, and animated e",
+        "default_args": {}
+      },
+      "pixverse-v5-i2v": {
+        "endpoint": "pixverse-v5-i2v",
+        "cost_usd": 0.3,
+        "best_for": "PixVerse V5 delivers a major leap forward in AI-powered video creation — now featuring smoother motion, ultra-high resol",
+        "default_args": {}
+      },
+      "pixverse-v5.5-i2v": {
+        "endpoint": "pixverse-v5.5-i2v",
+        "cost_usd": 0.1,
+        "best_for": "PixVerse v5.5 I2V transforms a single image into a dynamic cinematic video clip. It adds smooth camera motion, atmospher",
+        "default_args": {}
+      },
+      "pixverse-v6-i2v": {
+        "endpoint": "pixverse-v6-i2v",
+        "cost_usd": 0.295,
+        "best_for": "Animate any image into a video using PixVerse V6. Supports resolutions up to 1080p, durations up to 15 seconds, and prom",
+        "default_args": {}
+      },
+      "pixverse-v6-transition": {
+        "endpoint": "pixverse-v6-transition",
+        "cost_usd": 0.3,
+        "best_for": "Create a smooth transition between two images (start and end) or from a single starting image to a generated video.",
+        "default_args": {}
+      },
+      "runway-act-two-i2v": {
+        "endpoint": "runway-act-two-i2v",
+        "cost_usd": 0.07,
+        "best_for": "Upload a single character image and a driving video — the model transfers facial expressions and head movements from the",
+        "default_args": {}
+      },
+      "runway-image-to-video": {
+        "endpoint": "runway-image-to-video",
+        "cost_usd": 0.15,
+        "best_for": "Animate any image by turning it into a video with motion effects or scene continuity. RunwayML’s I2V model transforms st",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "sd-2-first-last-frame": {
+        "endpoint": "sd-2-first-last-frame",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 First & Last Frame (Pro) by ByteDance. Generate video that transitions between two reference images. Provide 1 imag",
+        "default_args": {}
+      },
+      "sd-2-first-last-frame-fast": {
+        "endpoint": "sd-2-first-last-frame-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 First & Last Frame (Fast) by ByteDance. Quickly generate video that transitions between reference images at reduced",
+        "default_args": {}
+      },
+      "sd-2-i2v": {
+        "endpoint": "sd-2-i2v",
+        "cost_usd": 0.75,
+        "best_for": "SD 2.0 is the latest multimodal video generation model by ByteDance, offering advanced camera control, native audio-vide",
+        "default_args": {}
+      },
+      "sd-2-i2v-480p": {
+        "endpoint": "sd-2-i2v-480p",
+        "cost_usd": 0.6,
+        "best_for": "SD 2.0 480p image-to-video generation. Faster and more cost-effective than the 720p variant, ideal for previews and draf",
+        "default_args": {}
+      },
+      "sd-2-image-to-video": {
+        "endpoint": "sd-2-image-to-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Image-to-Video (Pro) by ByteDance. Animates a start-frame image into a high-quality video with native audio, 4–15 s",
+        "default_args": {}
+      },
+      "sd-2-image-to-video-fast": {
+        "endpoint": "sd-2-image-to-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Image-to-Video (Fast) by ByteDance. Quickly animates a start-frame image into video with 4–15 second duration at re",
+        "default_args": {}
+      },
+      "sd-2-omni-reference": {
+        "endpoint": "sd-2-omni-reference",
+        "cost_usd": 1.5,
+        "best_for": "SD 2.0 Omni Reference — generate videos with visual consistency using reference images, videos, and audio. Maintain char",
+        "default_args": {}
+      },
+      "sd-2-omni-reference-480p": {
+        "endpoint": "sd-2-omni-reference-480p",
+        "cost_usd": 1.44,
+        "best_for": "SD 2.0 480p Omni Reference — generate videos with visual consistency using reference images, videos, and audio at 480p r",
+        "default_args": {}
+      },
+      "sd-2-omni-reference-no-video": {
+        "endpoint": "sd-2-omni-reference-no-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Omni Reference by ByteDance. Generate videos using up to 9 image references and up to 3 audio references. Reference",
+        "default_args": {}
+      },
+      "sd-2-omni-reference-no-video-fast": {
+        "endpoint": "sd-2-omni-reference-no-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Omni Reference (Fast) by ByteDance. Quickly generate videos using up to 9 image references and up to 3 audio refere",
+        "default_args": {}
+      },
+      "sd-2-vip-first-last-frame": {
+        "endpoint": "sd-2-vip-first-last-frame",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 First & Last Frame VIP (Pro) by ByteDance. Generate video that transitions between two reference images with priori",
+        "default_args": {}
+      },
+      "sd-2-vip-first-last-frame-1080p": {
+        "endpoint": "sd-2-vip-first-last-frame-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 First & Last Frame VIP 1080p by ByteDance. Generate 1080p video that transitions between two reference images with ",
+        "default_args": {}
+      },
+      "sd-2-vip-first-last-frame-fast": {
+        "endpoint": "sd-2-vip-first-last-frame-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 First & Last Frame VIP Fast by ByteDance. Faster generation of video transitions between two reference images with ",
+        "default_args": {}
+      },
+      "sd-2-vip-image-to-video": {
+        "endpoint": "sd-2-vip-image-to-video",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Image-to-Video VIP (Pro) by ByteDance. Animates a start-frame image into a high-quality video with priority routing",
+        "default_args": {}
+      },
+      "sd-2-vip-image-to-video-1080p": {
+        "endpoint": "sd-2-vip-image-to-video-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Image-to-Video VIP 1080p by ByteDance. Animates a still image into a cinematic 1080p video with priority routing, 4",
+        "default_args": {}
+      },
+      "sd-2-vip-image-to-video-fast": {
+        "endpoint": "sd-2-vip-image-to-video-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Image-to-Video VIP Fast by ByteDance. Faster animation of a start-frame image with priority routing, 4–15 second du",
+        "default_args": {}
+      },
+      "sd-2-vip-omni-reference": {
+        "endpoint": "sd-2-vip-omni-reference",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Omni Reference VIP (Pro) by ByteDance. Generate videos using up to 9 image references, up to 3 video clips, and up ",
+        "default_args": {}
+      },
+      "sd-2-vip-omni-reference-1080p": {
+        "endpoint": "sd-2-vip-omni-reference-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Omni Reference VIP 1080p by ByteDance. Generate full HD videos using up to 9 image references, up to 3 video clips,",
+        "default_args": {}
+      },
+      "sd-2-vip-omni-reference-fast": {
+        "endpoint": "sd-2-vip-omni-reference-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Omni Reference VIP Fast by ByteDance. Faster video generation using up to 9 image references, up to 3 video clips, ",
+        "default_args": {}
+      },
+      "seedance-2.0-mini-image-to-video": {
+        "endpoint": "seedance-2.0-mini-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Seedance 2.0 Mini Image-to-Video is the fastest and most cost-efficient tier in the Seedance 2.0 family, converting stil",
+        "default_args": {}
+      },
+      "seedance-2.1-image-to-video": {
+        "endpoint": "seedance-2.1-image-to-video",
+        "cost_usd": 0.4,
+        "best_for": "Seedance 2.1 Image-to-Video converts a single still image into a high-fidelity cinematic video. This next-generation mod",
+        "default_args": {
+          "duration": 5
+        }
+      },
+      "seedance-2.5-image-to-video": {
+        "endpoint": "seedance-2.5-image-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Seedance 2.5 Image-to-Video is the flagship next-generation model delivering photorealistic video from a single image. I",
+        "default_args": {
+          "duration": 5
+        }
+      },
+      "seedance-lite-i2v": {
+        "endpoint": "seedance-lite-i2v",
+        "cost_usd": 0.1,
+        "best_for": "Seedance Lite I2V version animates static images into short videos quickly, focusing on basic motion effects and efficie",
+        "default_args": {}
+      },
+      "seedance-lite-reference-video": {
+        "endpoint": "seedance-lite-reference-video",
+        "cost_usd": 0.1,
+        "best_for": "Seedance Lite's Reference-to-Video feature allows you to supply up to 4 images as reference inputs. The model intelligen",
+        "default_args": {}
+      },
+      "seedance-pro-i2v": {
+        "endpoint": "seedance-pro-i2v",
+        "cost_usd": 0.18,
+        "best_for": "Seedance Pro I2V advanced model animates still images into stunning short videos, preserving intricate visual details an",
+        "default_args": {
+          "duration": 5
+        }
+      },
+      "seedance-pro-i2v-fast": {
+        "endpoint": "seedance-pro-i2v-fast",
+        "cost_usd": 0.06,
+        "best_for": "Seedance Pro Fast is the high-speed image-to-video generation variant from ByteDance’s Seedance series. With this model ",
+        "default_args": {}
+      },
+      "seedance-v1.5-pro-i2v": {
+        "endpoint": "seedance-v1.5-pro-i2v",
+        "cost_usd": 0.34,
+        "best_for": "Seedance v1.5 Pro Image-to-Video converts a single still image into a smooth cinematic video clip. It preserves the orig",
+        "default_args": {}
+      },
+      "seedance-v1.5-pro-i2v-fast": {
+        "endpoint": "seedance-v1.5-pro-i2v-fast",
+        "cost_usd": 0.26,
+        "best_for": "Seedance v1.5 Pro Image-to-Video Fast converts a single still image into a short cinematic video with quick generation s",
+        "default_args": {}
+      },
+      "veo-4-image-to-video": {
+        "endpoint": "veo-4-image-to-video",
+        "cost_usd": 3.0,
+        "best_for": "Veo 4 Image to Video — animate any still image with Veo 4's motion synthesis engine, supporting fine-grained camera cont",
+        "default_args": {}
+      },
+      "veo3-fast-image-to-video": {
+        "endpoint": "veo3-fast-image-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Quickly transform static images into short, motion-rich video clips with fast rendering and impressive quality — powered",
+        "default_args": {}
+      },
+      "veo3-image-to-video": {
+        "endpoint": "veo3-image-to-video",
+        "cost_usd": 2.5,
+        "best_for": "VEO3 I2V animates static images into expressive video sequences, adding lifelike movement while preserving the original ",
+        "default_args": {}
+      },
+      "veo3.1-fast-image-to-video": {
+        "endpoint": "veo3.1-fast-image-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Veo 3.1 Fast is an optimized version of Google’s Veo 3.1 AI that transforms static images into dynamic 8-second videos a",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "veo3.1-image-to-video": {
+        "endpoint": "veo3.1-image-to-video",
+        "cost_usd": 2.5,
+        "best_for": "Veo 3.1 is Google's advanced AI video generation model that allows users to create high-quality, 8-second videos from st",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "veo3.1-lite-image-to-video": {
+        "endpoint": "veo3.1-lite-image-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Veo 3.1 Lite is a lightweight variant of Google's Veo 3.1 model designed for faster, more accessible video generation fr",
+        "default_args": {}
+      },
+      "veo3.1-reference-to-video": {
+        "endpoint": "veo3.1-reference-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Veo 3.1 R2V allows creators to generate dynamic videos using up to three reference images. The model maintains visual co",
+        "default_args": {}
+      },
+      "vfx": {
+        "endpoint": "vfx",
+        "cost_usd": 0.3,
+        "best_for": "VFX delivers high-impact visual effects like explosions, particles, and cinematic overlays to transform static images in",
+        "default_args": {}
+      },
+      "video-effects": {
+        "endpoint": "video-effects",
+        "cost_usd": 0.3,
+        "best_for": "AI Video Effects applies advanced visual transformations, color grading, and cinematic filters to create stunning videos",
+        "default_args": {}
+      },
+      "vidu-q1-reference": {
+        "endpoint": "vidu-q1-reference",
+        "cost_usd": 0.4,
+        "best_for": "Vidu Q1 enables you to generate cinematic 1080p videos using multiple visual references—up to seven images—and text prom",
+        "default_args": {}
+      },
+      "vidu-q2-pro-image-to-video": {
+        "endpoint": "vidu-q2-pro-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Vidu Q2 Pro Image-to-Video animates a single starting image into a smooth, prompt-guided clip up to 1080p while preservi",
+        "default_args": {}
+      },
+      "vidu-q2-pro-start-end-video": {
+        "endpoint": "vidu-q2-pro-start-end-video",
+        "cost_usd": 0.13,
+        "best_for": "Vidu Q2 Pro Start–End Video is a professional-grade model built for cinematic transformation storytelling. It evolves a ",
+        "default_args": {}
+      },
+      "vidu-q2-reference": {
+        "endpoint": "vidu-q2-reference",
+        "cost_usd": 0.065,
+        "best_for": "Vidu Q2 Reference Video generates breathtaking cinematic clips from text prompts guided by multiple reference images. Ea",
+        "default_args": {}
+      },
+      "vidu-q2-turbo-image-to-video": {
+        "endpoint": "vidu-q2-turbo-image-to-video",
+        "cost_usd": 0.13,
+        "best_for": "Vidu Q2 Turbo Image-to-Video animates a starting image into a fast, prompt-guided clip while preserving subject identity",
+        "default_args": {}
+      },
+      "vidu-q2-turbo-start-end-video": {
+        "endpoint": "vidu-q2-turbo-start-end-video",
+        "cost_usd": 0.06,
+        "best_for": "Vidu Q2 Turbo Start–End Video creates highly detailed cinematic sequences by interpolating between two visual states — y",
+        "default_args": {}
+      },
+      "vidu-q3-pro-first-last-frames": {
+        "endpoint": "vidu-q3-pro-first-last-frames",
+        "cost_usd": 0.75,
+        "best_for": "Vidu Q3 Pro First-Last Frames interpolates a smooth, cinematic transition between two key images — your start frame and ",
+        "default_args": {}
+      },
+      "vidu-q3-pro-image-to-video": {
+        "endpoint": "vidu-q3-pro-image-to-video",
+        "cost_usd": 0.75,
+        "best_for": "Vidu Q3 Pro Image-to-Video animates a single starting image into a smooth, prompt-guided clip up to 1080p. It preserves ",
+        "default_args": {}
+      },
+      "vidu-q3-turbo-first-last-frames": {
+        "endpoint": "vidu-q3-turbo-first-last-frames",
+        "cost_usd": 0.3,
+        "best_for": "Vidu Q3 Turbo First-Last Frames interpolates a quick, cost-efficient transition between two key images — your start fram",
+        "default_args": {}
+      },
+      "vidu-q3-turbo-image-to-video": {
+        "endpoint": "vidu-q3-turbo-image-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Vidu Q3 Turbo Image-to-Video animates a starting image into a fast, prompt-guided clip while keeping subject identity an",
+        "default_args": {}
+      },
+      "vidu-v2.0-i2v": {
+        "endpoint": "vidu-v2.0-i2v",
+        "cost_usd": 0.3,
+        "best_for": "Vidu's 2.0 model delivers advanced image-based video generation with enhanced lighting, emotion dynamics, and automatic ",
+        "default_args": {}
+      },
+      "wan2.1-image-to-video": {
+        "endpoint": "wan2.1-image-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Animate static images into expressive video sequences with WAN 2.1. Upload any image and guide its transformation into a",
+        "default_args": {}
+      },
+      "wan2.1-reference-video": {
+        "endpoint": "wan2.1-reference-video",
+        "cost_usd": 0.1,
+        "best_for": "WAN 2.1 is an advanced AI model that transforms one or more reference images into a coherent, animated video. By combini",
+        "default_args": {}
+      },
+      "wan2.2-image-to-video": {
+        "endpoint": "wan2.2-image-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Wan 2.2’s I2V mode brings static visuals to life with vivid, expressive animations. It interprets motion, emotion, and b",
+        "default_args": {}
+      },
+      "wan2.2-spicy-image-to-video": {
+        "endpoint": "wan2.2-spicy-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Wan2.2-spicy Image-to-Video transforms a single creative image into a short dynamic video with bold motion, stylized eff",
+        "default_args": {}
+      },
+      "wan2.5-image-to-video": {
+        "endpoint": "wan2.5-image-to-video",
+        "cost_usd": 0.65,
+        "best_for": "WAN 2.5 Image-to-Video takes your image as the starting frame and turns it into a dynamic video, preserving realism, mot",
+        "default_args": {}
+      },
+      "wan2.5-image-to-video-fast": {
+        "endpoint": "wan2.5-image-to-video-fast",
+        "cost_usd": 0.44,
+        "best_for": "Convert a single static image into a cinematic short video with realistic motion, dynamic camera movement, and environme",
+        "default_args": {}
+      },
+      "wan2.6-image-to-video": {
+        "endpoint": "wan2.6-image-to-video",
+        "cost_usd": 0.65,
+        "best_for": "WAN 2.6 Image-to-Video converts a single still image into a smooth, cinematic video clip. It preserves the original imag",
+        "default_args": {}
+      },
+      "wan2.7-image-to-video": {
+        "endpoint": "wan2.7-image-to-video",
+        "cost_usd": 0.1,
+        "best_for": "Alibaba WAN 2.7 converts images into videos with optional audio.",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "wan2.7-reference-to-video": {
+        "endpoint": "wan2.7-reference-to-video",
+        "cost_usd": 0.1,
+        "best_for": "Alibaba WAN 2.7 Reference-to-Video. Reference characters/props to generate new shots.",
+        "default_args": {}
+      },
+      "gemini-omni-text-to-video": {
+        "endpoint": "gemini-omni-text-to-video",
+        "cost_usd": 1.5,
+        "best_for": "Gemini Omni — natively multimodal any-to-any model. Generates high-fidelity video with synchronized audio directly from ",
+        "default_args": {}
+      },
+      "grok-imagine-extend": {
+        "endpoint": "grok-imagine-extend",
+        "cost_usd": 0.05,
+        "best_for": "Grok Imagine Extend lets you continue and expand existing Grok Imagine video generations seamlessly. Starting from a pre",
+        "default_args": {}
+      },
+      "grok-imagine-text-to-video": {
+        "endpoint": "grok-imagine-text-to-video",
+        "cost_usd": 0.15,
+        "best_for": "Grok Imagine is xAI’s fast, creative text-to-video model that generates cinematic clips from 6 to 30 seconds with smooth",
+        "default_args": {}
+      },
+      "happy-horse-1-text-to-video-1080p": {
+        "endpoint": "happy-horse-1-text-to-video-1080p",
+        "cost_usd": 1.8,
+        "best_for": "Happy Horse 1.0 Text to Video — generate expressive, stylized video clips from text prompts with vivid character motion ",
+        "default_args": {}
+      },
+      "happy-horse-1-text-to-video-720p": {
+        "endpoint": "happy-horse-1-text-to-video-720p",
+        "cost_usd": 0.9,
+        "best_for": "Happy Horse 1.0 Text to Video (720p) — generate expressive, stylized video clips from text prompts at 720p output resolu",
+        "default_args": {}
+      },
+      "hunyuan-fast-text-to-video": {
+        "endpoint": "hunyuan-fast-text-to-video",
+        "cost_usd": 0.05,
+        "best_for": "Hunyuan Fast T2V provides accelerated video generation from text prompts with slightly reduced detail but excellent spee",
+        "default_args": {}
+      },
+      "hunyuan-text-to-video": {
+        "endpoint": "hunyuan-text-to-video",
+        "cost_usd": 0.15,
+        "best_for": "Hunyuan T2V generates detailed and dynamic videos from text prompts with a focus on realism and coherent motion. It hand",
+        "default_args": {}
+      },
+      "kling-o1-text-to-video": {
+        "endpoint": "kling-o1-text-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling O1 is a unified, multi-modal video generation engine that transforms natural language prompts into short cinematic",
+        "default_args": {}
+      },
+      "kling-v2.1-master-t2v": {
+        "endpoint": "kling-v2.1-master-t2v",
+        "cost_usd": 1.2,
+        "best_for": "Kling 2.1 Master’s T2V mode allows users to generate vivid, high-quality videos from detailed text prompts. It supports ",
+        "default_args": {}
+      },
+      "kling-v2.5-turbo-pro-t2v": {
+        "endpoint": "kling-v2.5-turbo-pro-t2v",
+        "cost_usd": 0.45,
+        "best_for": "Kling 2.5 Turbo Pro: Top-tier text-to-video generation with unparalleled motion fluidity, cinematic visuals, and excepti",
+        "default_args": {}
+      },
+      "kling-v2.6-pro-t2v": {
+        "endpoint": "kling-v2.6-pro-t2v",
+        "cost_usd": 0.9,
+        "best_for": "Kling-v2.6-Pro Text-to-Video generates high-fidelity cinematic videos directly from text prompts. It excels at complex c",
+        "default_args": {}
+      },
+      "kling-v3-turbo-pro-text-to-video": {
+        "endpoint": "kling-v3-turbo-pro-text-to-video",
+        "cost_usd": 0.7,
+        "best_for": "Generate fast, high-quality videos from text prompts using Kling v3 Turbo Pro (1080p). Supports durations from 3 to 15 s",
+        "default_args": {}
+      },
+      "kling-v3-turbo-standard-text-to-video": {
+        "endpoint": "kling-v3-turbo-standard-text-to-video",
+        "cost_usd": 0.56,
+        "best_for": "Generate fast, high-quality videos from text prompts using Kling v3 Turbo Standard (720p). Supports durations from 3 to ",
+        "default_args": {}
+      },
+      "kling-v3.0-4k-text-to-video": {
+        "endpoint": "kling-v3.0-4k-text-to-video",
+        "cost_usd": 2.0,
+        "best_for": "Kling 3.0 4K Text-to-Video generates ultra-high-resolution 3840×2160 cinematic video directly from text prompts with smo",
+        "default_args": {}
+      },
+      "kling-v3.0-omni-4k-text-to-video": {
+        "endpoint": "kling-v3.0-omni-4k-text-to-video",
+        "cost_usd": 2.6785,
+        "best_for": "Kling v3 Omni at 4K. Multi-image reference video generation — supply up to 4 images and reference them in your prompt wi",
+        "default_args": {}
+      },
+      "kling-v3.0-omni-pro-text-to-video": {
+        "endpoint": "kling-v3.0-omni-pro-text-to-video",
+        "cost_usd": 0.56,
+        "best_for": "Kling v3 Omni at 1080P. Multi-image reference video generation — supply up to 4 images and reference them in your prompt",
+        "default_args": {}
+      },
+      "kling-v3.0-omni-standard-text-to-video": {
+        "endpoint": "kling-v3.0-omni-standard-text-to-video",
+        "cost_usd": 0.42,
+        "best_for": "Kling v3 Omni at 720P. Multi-image reference video generation — supply up to 4 images and reference them in your prompt ",
+        "default_args": {}
+      },
+      "kling-v3.0-pro-text-to-video": {
+        "endpoint": "kling-v3.0-pro-text-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling 3.0 Pro is a high-end video generation model capable of producing longer, smoother, and more realistic cinematic v",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      },
+      "kling-v3.0-standard-text-to-video": {
+        "endpoint": "kling-v3.0-standard-text-to-video",
+        "cost_usd": 0.72,
+        "best_for": "Kling 3.0 Standard Text-to-Video generates smooth, realistic videos from text with stable motion and natural behavior. I",
+        "default_args": {}
+      },
+      "ltx-2-19b-text-to-video": {
+        "endpoint": "ltx-2-19b-text-to-video",
+        "cost_usd": 0.6,
+        "best_for": "LTX-2-19B Text-to-Video generates coherent cinematic videos directly from text, with an emphasis on temporal stability, ",
+        "default_args": {}
+      },
+      "ltx-2-fast-text-to-video": {
+        "endpoint": "ltx-2-fast-text-to-video",
+        "cost_usd": 0.46,
+        "best_for": "LTX Video Fast is a speed-optimised mode of Lightricks’ video-generation engine, supporting text-to-video workflows. It ",
+        "default_args": {}
+      },
+      "ltx-2-pro-text-to-video": {
+        "endpoint": "ltx-2-pro-text-to-video",
+        "cost_usd": 0.46,
+        "best_for": "LTX-2 Pro is the high-fidelity video-generation engine by Lightricks designed for professional workflows, supporting bot",
+        "default_args": {}
+      },
+      "ltx-2.3-text-to-video": {
+        "endpoint": "ltx-2.3-text-to-video",
+        "cost_usd": 0.104,
+        "best_for": "LTX-2.3 Text-to-Video generates cinematic video clips directly from text prompts. Built on an upgraded 2.3B architecture",
+        "default_args": {}
+      },
+      "minimax-hailuo-02-pro-t2v": {
+        "endpoint": "minimax-hailuo-02-pro-t2v",
+        "cost_usd": 0.6,
+        "best_for": "High-fidelity text-to-video with cinematic rendering. Best for storytelling, cinematic clips, or realistic visuals with ",
+        "default_args": {}
+      },
+      "minimax-hailuo-02-standard-t2v": {
+        "endpoint": "minimax-hailuo-02-standard-t2v",
+        "cost_usd": 0.3,
+        "best_for": "Fast and lightweight text-to-video generation. Ideal for quick drafts, previews, or playful content where speed matters ",
+        "default_args": {}
+      },
+      "minimax-hailuo-2.3-pro-t2v": {
+        "endpoint": "minimax-hailuo-2.3-pro-t2v",
+        "cost_usd": 0.63,
+        "best_for": "Hailuo 2.3 Pro T2V turns your imagination into motion-picture realism. It interprets natural language prompts and genera",
+        "default_args": {}
+      },
+      "minimax-hailuo-2.3-standard-t2v": {
+        "endpoint": "minimax-hailuo-2.3-standard-t2v",
+        "cost_usd": 0.36,
+        "best_for": "Hailuo 2.3 Standard T2V transforms pure imagination into moving cinematic visuals. Simply describe a scene, and this mod",
+        "default_args": {}
+      },
+      "motion-graphics": {
+        "endpoint": "motion-graphics",
+        "cost_usd": 0.63,
+        "best_for": "Generate animated motion graphics videos from a text prompt using AI-generated React/Remotion code rendered on Modal.",
+        "default_args": {}
+      },
+      "openai-sora": {
+        "endpoint": "openai-sora",
+        "cost_usd": 0.5,
+        "best_for": "Sora is a text-to-video generative AI model developed by OpenAI. It can generate short video clips based on descriptive ",
+        "default_args": {}
+      },
+      "openai-sora-2-pro-storyboard": {
+        "endpoint": "openai-sora-2-pro-storyboard",
+        "cost_usd": 0.58,
+        "best_for": "Sora 2 Pro enables creators to structure video narratives by chaining multiple scenes through storyboard “cards.” Each c",
+        "default_args": {}
+      },
+      "openai-sora-2-pro-text-to-video": {
+        "endpoint": "openai-sora-2-pro-text-to-video",
+        "cost_usd": 2.4,
+        "best_for": "Sora 2 Pro T2V is the high-fidelity version of OpenAI’s video generation model. It converts your text prompts into cinem",
+        "default_args": {}
+      },
+      "openai-sora-2-text-to-video": {
+        "endpoint": "openai-sora-2-text-to-video",
+        "cost_usd": 0.8,
+        "best_for": "Sora 2 T2V converts text prompts into short, dynamic 10-second video clips with synchronized audio. Users can describe s",
+        "default_args": {}
+      },
+      "ovi-text-to-video": {
+        "endpoint": "ovi-text-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Ovi is a unified model that generates synchronized video and audio from textual input. You write a scene description, in",
+        "default_args": {}
+      },
+      "pixverse-v4.5-t2v": {
+        "endpoint": "pixverse-v4.5-t2v",
+        "cost_usd": 0.3,
+        "best_for": "PixVerse v4.5 transforms descriptive text into vivid, high-resolution video clips. It understands complex scenes, human ",
+        "default_args": {}
+      },
+      "pixverse-v5-t2v": {
+        "endpoint": "pixverse-v5-t2v",
+        "cost_usd": 0.3,
+        "best_for": "PixVerse V5 delivers a major leap forward in AI-powered video creation — now featuring smoother motion, ultra-high resol",
+        "default_args": {}
+      },
+      "pixverse-v5.5-t2v": {
+        "endpoint": "pixverse-v5.5-t2v",
+        "cost_usd": 0.1,
+        "best_for": "PixVerse v5.5 T2V generates cinematic short videos directly from text. It excels at stylized fantasy, anime, surreal wor",
+        "default_args": {}
+      },
+      "pixverse-v6-t2v": {
+        "endpoint": "pixverse-v6-t2v",
+        "cost_usd": 0.295,
+        "best_for": "Generate high-quality videos from text prompts using PixVerse V6. Supports resolutions up to 1080p, durations up to 15 s",
+        "default_args": {}
+      },
+      "runway-text-to-video": {
+        "endpoint": "runway-text-to-video",
+        "cost_usd": 0.09,
+        "best_for": "Generate short, high-quality videos from plain text prompts. RunwayML’s text-to-video model interprets your written desc",
+        "default_args": {}
+      },
+      "sd-2-extend": {
+        "endpoint": "sd-2-extend",
+        "cost_usd": 1.05,
+        "best_for": "SD 2.0 Extend Video continues an existing SD 2.0 generated video seamlessly. Provide the original request ID and an opti",
+        "default_args": {}
+      },
+      "sd-2-t2v": {
+        "endpoint": "sd-2-t2v",
+        "cost_usd": 0.75,
+        "best_for": "SD 2.0 is the latest multimodal video generation model by ByteDance, offering advanced camera control, native audio-vide",
+        "default_args": {}
+      },
+      "sd-2-t2v-480p": {
+        "endpoint": "sd-2-t2v-480p",
+        "cost_usd": 0.6,
+        "best_for": "SD 2.0 480p text-to-video generation. Faster and more cost-effective than the 720p variant, ideal for previews and draft",
+        "default_args": {}
+      },
+      "sd-2-text-to-video": {
+        "endpoint": "sd-2-text-to-video",
+        "cost_usd": 1.25,
+        "best_for": "SD 2 Text-to-Video (Pro) by ByteDance. Generates high-quality cinematic video from a text prompt with native audio-visua",
+        "default_args": {}
+      },
+      "sd-2-text-to-video-fast": {
+        "endpoint": "sd-2-text-to-video-fast",
+        "cost_usd": 0.75,
+        "best_for": "SD 2 Text-to-Video (Fast) by ByteDance. Generates video from text at faster speeds with 4–15 second duration and 2K reso",
+        "default_args": {}
+      },
+      "sd-2-vip-extend": {
+        "endpoint": "sd-2-vip-extend",
+        "cost_usd": 1.05,
+        "best_for": "SD 2.0 VIP Extend Video continues an existing SD 2.0 generated video seamlessly at 720p. Provide the original request ID",
+        "default_args": {}
+      },
+      "sd-2-vip-extend-1080p": {
+        "endpoint": "sd-2-vip-extend-1080p",
+        "cost_usd": 2.3625,
+        "best_for": "SD 2.0 VIP Extend Video 1080p continues an existing SD 2.0 generated video seamlessly at 1080p resolution. Provide the o",
+        "default_args": {}
+      },
+      "sd-2-vip-text-to-video": {
+        "endpoint": "sd-2-vip-text-to-video",
+        "cost_usd": 1.5,
+        "best_for": "SD 2 Text-to-Video VIP (Pro) by ByteDance. Generates high-quality cinematic video from a text prompt with priority routi",
+        "default_args": {}
+      },
+      "sd-2-vip-text-to-video-1080p": {
+        "endpoint": "sd-2-vip-text-to-video-1080p",
+        "cost_usd": 3.375,
+        "best_for": "SD 2 Text-to-Video VIP 1080p by ByteDance. Generates cinematic 1080p video from a text prompt with priority routing, nat",
+        "default_args": {}
+      },
+      "sd-2-vip-text-to-video-fast": {
+        "endpoint": "sd-2-vip-text-to-video-fast",
+        "cost_usd": 1.05,
+        "best_for": "SD 2 Text-to-Video VIP Fast by ByteDance. Faster generation with priority routing from a text prompt, 4–15 second durati",
+        "default_args": {}
+      },
+      "seedance-2.0-mini-text-to-video": {
+        "endpoint": "seedance-2.0-mini-text-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Seedance 2.0 Mini Text-to-Video is the fastest and most affordable text-to-video model in the Seedance lineup, generatin",
+        "default_args": {}
+      },
+      "seedance-2.1-text-to-video": {
+        "endpoint": "seedance-2.1-text-to-video",
+        "cost_usd": 0.4,
+        "best_for": "Seedance 2.1 Text-to-Video generates high-quality cinematic videos directly from text prompts. The model excels at compl",
+        "default_args": {}
+      },
+      "seedance-2.5-text-to-video": {
+        "endpoint": "seedance-2.5-text-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Seedance 2.5 Text-to-Video is the most advanced text-to-video model, generating photorealistic 4K cinematic videos from ",
+        "default_args": {}
+      },
+      "seedance-lite-t2v": {
+        "endpoint": "seedance-lite-t2v",
+        "cost_usd": 0.1,
+        "best_for": "Seedance Lite T2V offers quick video generation from text with decent visual quality and motion. Ideal for fast previews",
+        "default_args": {}
+      },
+      "seedance-pro-t2v": {
+        "endpoint": "seedance-pro-t2v",
+        "cost_usd": 0.18,
+        "best_for": "Seedance Pro delivers high-fidelity video generation from text, producing rich visuals, smooth camera movement, and real",
+        "default_args": {
+          "duration": 5
+        }
+      },
+      "seedance-pro-t2v-fast": {
+        "endpoint": "seedance-pro-t2v-fast",
+        "cost_usd": 0.06,
+        "best_for": "Seedance Pro Fast is ByteDance’s advanced text-to-video model that turns natural-language prompts into short, cinematic ",
+        "default_args": {}
+      },
+      "seedance-v1.5-pro-t2v": {
+        "endpoint": "seedance-v1.5-pro-t2v",
+        "cost_usd": 0.34,
+        "best_for": "Seedance v1.5 Pro Text-to-Video generates high-quality cinematic videos directly from text prompts. It focuses on smooth",
+        "default_args": {}
+      },
+      "seedance-v1.5-pro-t2v-fast": {
+        "endpoint": "seedance-v1.5-pro-t2v-fast",
+        "cost_usd": 0.26,
+        "best_for": "Seedance v1.5 Pro Text-to-Video Fast generates short cinematic videos directly from text with an emphasis on speed and s",
+        "default_args": {}
+      },
+      "veo-4-text-to-video": {
+        "endpoint": "veo-4-text-to-video",
+        "cost_usd": 3.0,
+        "best_for": "Veo 4 Text to Video — Google DeepMind's fourth-generation model delivering photorealistic, high-fidelity 1080p videos wi",
+        "default_args": {}
+      },
+      "veo3-fast-text-to-video": {
+        "endpoint": "veo3-fast-text-to-video",
+        "cost_usd": 0.6,
+        "best_for": "VEO3 Fast T2V creates short videos from text instantly, balancing speed and quality for quick content generation and pro",
+        "default_args": {}
+      },
+      "veo3-text-to-video": {
+        "endpoint": "veo3-text-to-video",
+        "cost_usd": 2.5,
+        "best_for": "VEO3 T2V generates cinematic videos from text prompts, capturing dynamic motion, rich scenes, and storytelling visuals i",
+        "default_args": {}
+      },
+      "veo3.1-4k-video": {
+        "endpoint": "veo3.1-4k-video",
+        "cost_usd": 0.6,
+        "best_for": "Get the ultra-high-definition 4K version of a Veo3.1 video generation task. This model is optimized for producing crisp,",
+        "default_args": {}
+      },
+      "veo3.1-extend-video": {
+        "endpoint": "veo3.1-extend-video",
+        "cost_usd": 0.6,
+        "best_for": "Veo 3.1’s Extend Video mode lets you continue or expand an existing video clip seamlessly. Starting from a short generat",
+        "default_args": {}
+      },
+      "veo3.1-fast-text-to-video": {
+        "endpoint": "veo3.1-fast-text-to-video",
+        "cost_usd": 0.6,
+        "best_for": "Veo 3.1 Fast T2V is a high-speed AI video model that transforms text prompts into realistic 8-second videos. It emphasiz",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "veo3.1-lite-text-to-video": {
+        "endpoint": "veo3.1-lite-text-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Veo 3.1 Lite is a lightweight variant of Google's Veo 3.1 model designed for faster, more accessible video generation.",
+        "default_args": {}
+      },
+      "veo3.1-text-to-video": {
+        "endpoint": "veo3.1-text-to-video",
+        "cost_usd": 2.5,
+        "best_for": "Veo 3.1 is Google's advanced AI video generation model that transforms text prompts into high-quality videos. This model",
+        "default_args": {
+          "aspect_ratio": "16:9"
+        }
+      },
+      "vidu-q2-pro-text-to-video": {
+        "endpoint": "vidu-q2-pro-text-to-video",
+        "cost_usd": 0.2,
+        "best_for": "Vidu Q2 Pro Text-to-Video generates cinematic, prompt-faithful clips from text alone with strong temporal consistency an",
+        "default_args": {}
+      },
+      "vidu-q2-turbo-text-to-video": {
+        "endpoint": "vidu-q2-turbo-text-to-video",
+        "cost_usd": 0.13,
+        "best_for": "Vidu Q2 Turbo Text-to-Video is the fast, affordable Q2 tier for prompt-only generation. Use it for storyboards, social c",
+        "default_args": {}
+      },
+      "vidu-q3-pro-text-to-video": {
+        "endpoint": "vidu-q3-pro-text-to-video",
+        "cost_usd": 0.75,
+        "best_for": "Vidu Q3 Pro Text-to-Video generates cinematic, prompt-faithful clips with strong temporal consistency, accurate motion, ",
+        "default_args": {}
+      },
+      "vidu-q3-turbo-text-to-video": {
+        "endpoint": "vidu-q3-turbo-text-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Vidu Q3 Turbo Text-to-Video is the fast, affordable tier of Vidu Q3 — same prompt understanding and motion quality, opti",
+        "default_args": {}
+      },
+      "vidu-v2.0-t2v": {
+        "endpoint": "vidu-v2.0-t2v",
+        "cost_usd": 0.3,
+        "best_for": "Vidu's 2.0 model offers enhanced visual quality and comprehensive workflow support across multiple resolution options fo",
+        "default_args": {}
+      },
+      "wan2.1-text-to-video": {
+        "endpoint": "wan2.1-text-to-video",
+        "cost_usd": 0.3,
+        "best_for": "WAN 2.1 turns your written prompts into vivid, cinematic video clips. Ideal for storytelling, content creation, and visu",
+        "default_args": {}
+      },
+      "wan2.2-5b-fast-t2v": {
+        "endpoint": "wan2.2-5b-fast-t2v",
+        "cost_usd": 0.016,
+        "best_for": "Wan 2.2 Fast is a lightweight, high-speed version of the Wan 2.2 model, optimized for quick text-to-video generation. It",
+        "default_args": {}
+      },
+      "wan2.2-text-to-video": {
+        "endpoint": "wan2.2-text-to-video",
+        "cost_usd": 0.3,
+        "best_for": "Wan 2.2’s T2V mode transforms descriptive text prompts into high-quality, stylized video sequences. It excels at generat",
+        "default_args": {}
+      },
+      "wan2.5-text-to-video": {
+        "endpoint": "wan2.5-text-to-video",
+        "cost_usd": 0.65,
+        "best_for": "WAN 2.5 Text-to-Video transforms written prompts into cinematic video clips with dynamic motion, realistic physics, and ",
+        "default_args": {}
+      },
+      "wan2.5-text-to-video-fast": {
+        "endpoint": "wan2.5-text-to-video-fast",
+        "cost_usd": 0.44,
+        "best_for": "Transform text prompts into short, cinematic videos with natural motion, realistic environments, and dynamic camera pers",
+        "default_args": {}
+      },
+      "wan2.6-text-to-video": {
+        "endpoint": "wan2.6-text-to-video",
+        "cost_usd": 0.65,
+        "best_for": "WAN 2.6 Text-to-Video generates smooth, cinematic videos directly from text prompts. It’s designed for strong scene cohe",
+        "default_args": {}
+      },
+      "wan2.7-text-to-video": {
+        "endpoint": "wan2.7-text-to-video",
+        "cost_usd": 0.1,
+        "best_for": "Alibaba WAN 2.7 Text-to-Video turns plain prompts into coherent, cinematic clips.",
+        "default_args": {
+          "duration": 5,
+          "aspect_ratio": "16:9"
+        }
+      }
+    }
+  },
+  "upscale": {
+    "default": "ai-image-upscaler",
+    "models": {
+      "ai-image-upscaler": {
+        "endpoint": "ai-image-upscaler",
+        "cost_usd": 0.02,
+        "best_for": "Transform blurry or pixelated images into high-definition visuals. Our AI Image Upscaler uses deep learning to reconstru",
+        "default_args": {}
+      },
+      "seedvr2-image-upscale": {
+        "endpoint": "seedvr2-image-upscale",
+        "cost_usd": 0.02,
+        "best_for": "SeedVR2 is a one-step diffusion-transformer model designed for image restoration, super-resolution, deblurring, and arti",
+        "default_args": {}
+      },
+      "topaz-image-upscale": {
+        "endpoint": "topaz-image-upscale",
+        "cost_usd": 0.075,
+        "best_for": "Topaz Image Upscale is a high-quality image-to-image enhancement model that increases resolution, sharpness, and detail ",
+        "default_args": {}
+      }
+    }
+  },
+  "audio_to_video": {
+    "default": "latent-sync",
+    "models": {
+      "creatify-lipsync": {
+        "endpoint": "creatify-lipsync",
+        "cost_usd": 0.04,
+        "best_for": "Realistic lipsync video - optimized for speed, quality, and consistency.",
+        "default_args": {}
+      },
+      "infinitetalk-image-to-video": {
+        "endpoint": "infinitetalk-image-to-video",
+        "cost_usd": 0.2,
+        "best_for": "InfiniteTalk Image-to-Video brings still portraits and character photos to life by generating natural, realistic talking",
+        "default_args": {}
+      },
+      "kling-v1-avatar-pro": {
+        "endpoint": "kling-v1-avatar-pro",
+        "cost_usd": 0.65,
+        "best_for": "Kling AI Avatar Pro is the premium tier for making high-quality talking avatars. You upload a character image plus an au",
+        "default_args": {}
+      },
+      "kling-v1-avatar-standard": {
+        "endpoint": "kling-v1-avatar-standard",
+        "cost_usd": 0.35,
+        "best_for": "Kling AI Avatar Standard creates talking avatar videos from a single image + audio input. It supports realistic humans, ",
+        "default_args": {}
+      },
+      "kling-v2-avatar-pro": {
+        "endpoint": "kling-v2-avatar-pro",
+        "cost_usd": 0.75,
+        "best_for": "AI-Avatar v2 Pro takes a reference image of a person/character and an audio dialogue clip, then generates a realistic ta",
+        "default_args": {}
+      },
+      "kling-v2-avatar-standard": {
+        "endpoint": "kling-v2-avatar-standard",
+        "cost_usd": 0.35,
+        "best_for": "AI-Avatar v2 Standard generates a talking-avatar video from a reference image and an audio dialogue. It performs accurat",
+        "default_args": {}
+      },
+      "latent-sync": {
+        "endpoint": "latent-sync",
+        "cost_usd": 0.04,
+        "best_for": "LatentSync is a video-to-video model that generates lip sync animations from audio using advanced algorithms for high-qu",
+        "default_args": {}
+      },
+      "ltx-2-19b-lipsync": {
+        "endpoint": "ltx-2-19b-lipsync",
+        "cost_usd": 0.2,
+        "best_for": "LTX-2-19B LipSync generates a realistic talking video by synchronizing a person’s mouth movements to an input audio clip",
+        "default_args": {}
+      },
+      "ltx-2.3-lipsync": {
+        "endpoint": "ltx-2.3-lipsync",
+        "cost_usd": 0.26,
+        "best_for": "LTX-2.3 LipSync generates a realistic talking video by synchronizing mouth movements to an input audio clip. It preserve",
+        "default_args": {}
+      },
+      "omnihuman-1-5": {
+        "endpoint": "omnihuman-1-5",
+        "cost_usd": 0.25,
+        "best_for": "Generate realistic talking head video from portrait image and audio using KIE OmniHuman 1.5.",
+        "default_args": {}
+      },
+      "sync-lipsync": {
+        "endpoint": "sync-lipsync",
+        "cost_usd": 0.04,
+        "best_for": "Generate realistic lipsync animations from audio using advanced algorithms for high-quality synchronization.",
+        "default_args": {}
+      },
+      "veed-lipsync": {
+        "endpoint": "veed-lipsync",
+        "cost_usd": 0.04,
+        "best_for": "Generate realistic lipsync from any audio using VEED's latest model",
+        "default_args": {}
+      },
+      "wan2.2-speech-to-video": {
+        "endpoint": "wan2.2-speech-to-video",
+        "cost_usd": 0.2,
+        "best_for": "WAN2.2 Speech-to-Video transforms a static image into a talking video by synchronizing lip movements and facial expressi",
+        "default_args": {}
+      }
+    }
+  },
+  "image_to_3d": {
+    "default": "tripo3d-h31-image-to-3d",
+    "models": {
+      "meshy-6-image-to-3d": {
+        "endpoint": "meshy-6-image-to-3d",
+        "cost_usd": 0.5,
+        "best_for": "Generate a clean 3D mesh from a single reference image. Output is a textured .glb plus FBX/OBJ/USDZ alternatives. Option",
+        "default_args": {}
+      },
+      "meshy-6-multi-image-to-3d": {
+        "endpoint": "meshy-6-multi-image-to-3d",
+        "cost_usd": 0.5,
+        "best_for": "Reconstruct a 3D mesh from 1-4 reference images. Multi-view inputs produce more accurate geometry for complex or asymmet",
+        "default_args": {}
+      },
+      "meshy-6-text-to-3d": {
+        "endpoint": "meshy-6-text-to-3d",
+        "cost_usd": 0.5,
+        "best_for": "Generate detailed 3D models from text with configurable topology, polygon count, symmetry, and optional PBR materials. T",
+        "default_args": {}
+      },
+      "tripo3d-h31-image-to-3d": {
+        "endpoint": "tripo3d-h31-image-to-3d",
+        "cost_usd": 0.3,
+        "best_for": "Convert a single image into a highly detailed 3D model with selectable texture quality and optional quad topology. Ideal",
+        "default_args": {}
+      },
+      "tripo3d-h31-multiview-to-3d": {
+        "endpoint": "tripo3d-h31-multiview-to-3d",
+        "cost_usd": 0.2,
+        "best_for": "Reconstruct a 3D model from 2-4 reference images taken from different angles. Multi-view consistency yields the most acc",
+        "default_args": {}
+      },
+      "tripo3d-h31-text-to-3d": {
+        "endpoint": "tripo3d-h31-text-to-3d",
+        "cost_usd": 0.2,
+        "best_for": "High-quality text-to-3D with selectable texture and geometry quality, optional PBR materials, and quad-topology output. ",
+        "default_args": {}
+      },
+      "tripo3d-p1-image-to-3d": {
+        "endpoint": "tripo3d-p1-image-to-3d",
+        "cost_usd": 0.5,
+        "best_for": "Turn a single reference image into a textured 3D mesh. Output is a watertight .glb ready for game engines, AR, or 3D pri",
+        "default_args": {}
+      },
+      "tripo3d-p1-text-to-3d": {
+        "endpoint": "tripo3d-p1-text-to-3d",
+        "cost_usd": 0.5,
+        "best_for": "Generate textured 3D meshes directly from a text prompt. Outputs a clean .glb with optional PBR textures and configurabl",
+        "default_args": {}
+      }
+    }
+  },
+  "audio": {
+    "default": "suno-create-music",
+    "models": {
+      "minimax-speech-2.6-hd": {
+        "endpoint": "minimax-speech-2.6-hd",
+        "cost_usd": 0.65,
+        "best_for": "Speech-2.6-hd is Minimax’s high-definition text-to-speech model that turns written text into natural, human-like audio. ",
+        "default_args": {}
+      },
+      "minimax-speech-2.6-turbo": {
+        "endpoint": "minimax-speech-2.6-turbo",
+        "cost_usd": 0.65,
+        "best_for": "Speech-2.6-turbo is Minimax’s fast, lightweight text-to-speech model designed for quick audio generation while maintaini",
+        "default_args": {}
+      },
+      "minimax-voice-clone": {
+        "endpoint": "minimax-voice-clone",
+        "cost_usd": 0.65,
+        "best_for": "Minimax Voice Clone creates a high-fidelity digital clone of a speaker’s voice from a short reference audio sample. It r",
+        "default_args": {}
+      },
+      "mmaudio-v2-text-to-audio": {
+        "endpoint": "mmaudio-v2-text-to-audio",
+        "cost_usd": 0.01,
+        "best_for": "Convert text into natural-sounding speech using mmAudio-v2. Ideal for voiceovers, virtual assistants, and content narrat",
+        "default_args": {}
+      },
+      "suno-add-instrumental": {
+        "endpoint": "suno-add-instrumental",
+        "cost_usd": 0.09,
+        "best_for": "Add instrumental backing to acapella audio.",
+        "default_args": {}
+      },
+      "suno-add-vocals": {
+        "endpoint": "suno-add-vocals",
+        "cost_usd": 0.09,
+        "best_for": "Add vocals to an instrumental track.",
+        "default_args": {}
+      },
+      "suno-create-music": {
+        "endpoint": "suno-create-music",
+        "cost_usd": 0.09,
+        "best_for": "Suno generate music that turns text prompts into full songs — complete with vocals, lyrics, and instrumentation. You can",
+        "default_args": {}
+      },
+      "suno-extend-music": {
+        "endpoint": "suno-extend-music",
+        "cost_usd": 0.09,
+        "best_for": "This API extends audio tracks while preserving the original style of the audio track. It includes Suno's upload function",
+        "default_args": {}
+      },
+      "suno-generate-mashup": {
+        "endpoint": "suno-generate-mashup",
+        "cost_usd": 0.09,
+        "best_for": "Create a mashup using 1-5 audio tracks.",
+        "default_args": {}
+      },
+      "suno-generate-sounds": {
+        "endpoint": "suno-generate-sounds",
+        "cost_usd": 0.02,
+        "best_for": "Generate sound effects using Suno chirp-crow model.",
+        "default_args": {}
+      },
+      "suno-remix-music": {
+        "endpoint": "suno-remix-music",
+        "cost_usd": 0.09,
+        "best_for": "This API covers an audio track by transforming it into a new style while retaining its core melody. It incorporates Suno",
+        "default_args": {}
+      },
+      "suno-voice-clone": {
+        "endpoint": "suno-voice-clone",
+        "cost_usd": 0.0,
+        "best_for": "Clone your singing voice in two takes for use with Suno music generation. Submit a 10-second sample, then read back a fr",
+        "default_args": {}
+      }
+    }
+  }
+}
