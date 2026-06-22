@@ -1,60 +1,67 @@
 # media-gen
 
-Local image and image-to-video pipeline using Fal.ai. A lightweight, no-subscription alternative to hosted gen UIs like Higgsfield: you bring your own Fal key and pay per generation.
+Local image and video generation pipeline via [MuAPI](https://muapi.ai). Pay per generation, no subscription. 341 models: FLUX, Midjourney, GPT-image, Imagen4, Kling, Seedance, Veo3, Sora, WAN, and more.
 
 ## What it does
 
-You describe media casually ("a photo of a dog swimming with a tennis ball"). Claude refines the prompt, picks the current best model from `models.json`, generates the image via Fal.ai, saves it to a dated local folder, and asks if you want to animate it. If yes, it conversationally collects a motion prompt, duration, and resolution, then generates the video.
+You describe media casually ("a photo of a dog swimming with a tennis ball"). Claude refines the prompt, picks the best model from `models.json`, generates via MuAPI, saves to a dated local folder, and offers to animate the image into video.
 
 All artifacts (`prompt.md`, `image-NN.png`, `video-NN.mp4`) live in one folder per generation.
 
 ## Install
 
-This skill is a Claude Code [agent skill](https://docs.claude.com/en/docs/claude-code/skills). Drop the `media-gen` folder into your skills directory and Claude will pick it up automatically.
+Drop the `media-gen` folder into your Claude Code skills directory:
 
-1. **Place the folder:**
-   - Mac/Linux: `~/.claude/skills/media-gen/`
-   - Windows: `C:\Users\<you>\.claude\skills\media-gen\`
+- Mac/Linux: `~/.claude/skills/media-gen/`
+- Windows: `C:\Users\<you>\.claude\skills\media-gen\`
 
-2. **Get a Fal key.** Sign up at https://fal.ai and copy your API key from the dashboard.
+Then:
 
-3. **Set the env var (one-time):**
-   - Windows: `setx FAL_KEY "your-key-here"`, then **close and reopen your terminal** (`setx` doesn't apply to the current session).
-   - Mac/Linux: add `export FAL_KEY="your-key-here"` to `~/.zshrc` (or `~/.bashrc`), then `source ~/.zshrc`.
+1. **Get a MuAPI key.** Sign up at https://muapi.ai and copy your API key from the dashboard.
 
-   The skill reads `FAL_KEY` from your environment at runtime. It is never stored in any file in this folder.
+2. **Set the env var:**
+   - Mac/Linux: add `export MUAPI_KEY="your-key-here"` to `~/.zshrc`, then `source ~/.zshrc`
+   - Windows: `setx MUAPI_KEY "your-key-here"`, then restart terminal
 
-4. **Install the SDK:**
+3. **Install the dependency:**
    ```
-   pip install fal-client
+   pip install requests
    ```
 
-5. **Test it.** In any Claude Code session, say:
+4. **Test it.** In any Claude Code session, say:
    > generate a photo of a single red apple on a white background
 
-   Claude should invoke this skill and run end-to-end.
+## Usage
 
-## How to use it
+Just talk to Claude:
 
-Just talk to Claude in any session. Triggers:
 - *"generate a photo of ..."*
 - *"make me an image where ..."*
-- *"create a video of ..."*
-- *"turn this image into a video"*
+- *"create a video of ..."* (text-to-video)
+- *"turn this image into a video"* (image-to-video)
+- *"upscale this image"*
 
-Claude reads `SKILL.md`, refines the prompt, picks the model, runs `scripts/generate.py`, and saves to `~/Documents/Media Gen/<date>-<slug>/`.
+Claude reads `SKILL.md`, refines the prompt, picks the model, runs `scripts/generate.py`, saves to `~/Documents/Media Gen/<date>-<slug>/`.
 
-## Updating the model registry
+## Model registry
 
-`models.json` is the source of truth for "current best." Two ways to update:
+`models.json` contains 341 models from the live MuAPI catalog, organized by category:
 
-**Manual:** Edit the file. Bump `default` to the new winner. Update `last_updated`.
+| Section | Count | Examples |
+|---|---|---|
+| `image` | 62 | flux-dev, midjourney-v8, nano-banana-pro, gpt4o, imagen4 |
+| `image_edit` | 62 | flux-kontext-dev-i2i, nano-banana-edit, gpt4o-edit |
+| `video` | 181 | kling-v3, seedance-2.5, veo3.1, wan2.7, sora-2, runway |
+| `upscale` | 3 | ai-image-upscaler, topaz-image-upscale, seedvr2 |
+| `audio_to_video` | 13 | latent-sync, kling-avatar, omnihuman |
+| `image_to_3d` | 8 | tripo3d, meshy |
+| `audio` | 12 | suno, mmaudio |
 
-**Assisted:** In any Claude session, say *"check fal.ai for new image and video models and update media-gen registry."* Claude will WebFetch fal.ai/models, compare, propose a diff, and write the update on your approval.
+To refresh the catalog: `curl https://api.muapi.ai/api/v1/models` (no auth).
 
 ## Configuration
 
-Edit `config.json` to change the output root directory. Default is `~/Documents/Media Gen`. Tilde and env vars expand.
+Edit `config.json` to change the output directory. Default: `~/Documents/Media Gen`.
 
 ## File structure
 
@@ -62,26 +69,26 @@ Edit `config.json` to change the output root directory. Default is `~/Documents/
 media-gen/
 ├── SKILL.md            # Workflow instructions Claude reads
 ├── README.md           # This file
-├── config.json         # Output dir + future config
-├── models.json         # Curated registry of "current best" Fal models
+├── config.json         # Output dir
+├── models.json         # Full MuAPI model catalog (341 models)
 └── scripts/
-    └── generate.py     # CLI: image | video subcommands
+    └── generate.py     # CLI: image | video | upscale subcommands
 ```
 
 ## Troubleshooting
 
 | Error | Fix |
 |---|---|
-| `FAL_KEY not set` | `setx FAL_KEY "..."` (Windows) or export in `~/.zshrc` (Mac), then restart terminal |
-| `ModuleNotFoundError: fal_client` | `pip install fal-client` |
-| `404` on a `fal_id` | Model slug drifted on Fal. Open https://fal.ai/models, find the new slug, update `models.json` |
-| `couldn't resolve output_path` | Fal changed the response schema for that model. Check the raw result printed in stderr, update the `output_path` in `models.json` (e.g. `images[0].url` vs `image.url` vs `video.url`) |
-| Generation just hangs | Fal queue can be slow. Image gens usually under 30s, videos 1 to 3 min. If over 5 min, kill and retry |
+| `MUAPI_KEY not set` | Add `export MUAPI_KEY="..."` to `~/.zshrc`, then `source ~/.zshrc` |
+| `requests not installed` | `pip install requests` |
+| HTTP 404 on endpoint | Endpoint slug changed. Fetch `https://api.muapi.ai/api/v1/models` for current slugs |
+| Generation hangs | Images: under 30s. Videos: 1–3 min. If over 10 min, kill and retry |
 
-## Cost reality (2026 estimates)
+## Cost (MuAPI, 2026)
 
-- Nano Banana Pro: ~$0.04 per image
-- Seedance 2.0 Pro 5s: ~$0.40 to $0.60 per video
-- Kling v3 Pro 5s: ~$0.50 to $0.95 per video
+- flux-dev: ~$0.015/image
+- kling-v3.0-pro I2V 5s: ~$0.72/video
+- veo3.1-fast T2V: ~$0.60/video
+- seedance-pro I2V: ~$0.18/video
 
-At a light cadence (a handful of images plus 1 to 2 videos per week), you're looking at a few dollars a month, pay-as-you-go instead of a flat subscription. Verify current pricing at fal.ai/pricing. These are estimates, not contracts.
+Current pricing always in `models.json` (`cost_usd` field) and live at `https://api.muapi.ai/api/v1/models`.
