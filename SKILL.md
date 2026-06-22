@@ -1,5 +1,5 @@
 ---
-name: media-gen
+name: sega-media-gen
 description: Generate and upscale AI images and videos via MuAPI using a curated registry of best-in-class models. Use whenever the user asks to create, generate, make, render, or produce a photo, image, picture, or video. Phrases like "make me an image of...", "generate a video of...", "create a photo where...", "I want a picture of...", "turn this into a video", "text to video". Also use to upscale or enhance an existing image to HD ("upscale this", "make this HD"). Workflow refines the prompt with reasoning, picks the current best model from models.json, generates locally to a dated folder, and conversationally offers to animate the image into video.
 ---
 
